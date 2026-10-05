@@ -1,0 +1,1944 @@
+[
+  {
+    "id": 1,
+    "num": 1,
+    "audit": "GMP",
+    "title": "Business license",
+    "description": "Copie de licence",
+    "owner": "Chaima",
+    "department": "?",
+    "status": 1,
+    "applicable": true,
+    "due": "2026-10-09",
+    "requirements": [
+      "Copie de licence"
+    ],
+    "comments": []
+  },
+  {
+    "id": 2,
+    "num": 2,
+    "audit": "GMP",
+    "title": "Organizational charts",
+    "description": "PPT de la dernière version de l'organigramme de la société avec date de mise à jour",
+    "owner": "RH",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-09",
+    "requirements": [
+      "PPT de la dernière version de l'organigramme de la société avec date de mise à jour"
+    ],
+    "comments": []
+  },
+  {
+    "id": 3,
+    "num": 3,
+    "audit": "GMP",
+    "title": "Production process flow chart",
+    "description": "Mettre la dernère version codifié de flux de process avec date de mise à jour",
+    "owner": "Saif et Salh",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-09",
+    "requirements": [
+      "Mettre la dernère version codifié de flux de process avec date de mise à jour"
+    ],
+    "comments": []
+  },
+  {
+    "id": 4,
+    "num": 4,
+    "audit": "GMP",
+    "title": "Quality policy/objective/manual/system",
+    "description": "Copie de la politique qualité arabe et francais signe\r\nTableau des objectifs 2026\r\nManuel qualité",
+    "owner": "Tous les pilotes",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-09",
+    "requirements": [
+      "Copie de la politique qualité arabe et francais signe",
+      "Tableau des objectifs 2026",
+      "Manuel qualité"
+    ],
+    "comments": []
+  },
+  {
+    "id": 5,
+    "num": 5,
+    "audit": "GMP",
+    "title": "Management review procedure/plan/report/corrective & preventive action record",
+    "description": "Procédure de management review\r\nPlan de management review\r\nRapport de Management review 2026",
+    "owner": "Sami",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-09",
+    "requirements": [
+      "Procédure de management review",
+      "Plan de management review",
+      "Rapport de Management review 2026"
+    ],
+    "comments": []
+  },
+  {
+    "id": 6,
+    "num": 6,
+    "audit": "GMP",
+    "title": "Document management system",
+    "description": "Procédure de gestion de document \r\nAccés limité \r\nPlan d'audit documentation\r\nChecklist d'audit documentation",
+    "owner": "Naoures",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-09",
+    "requirements": [
+      "Procédure de gestion de document",
+      "Accés limité",
+      "Plan d'audit documentation",
+      "Checklist d'audit documentation"
+    ],
+    "comments": []
+  },
+  {
+    "id": 7,
+    "num": 7,
+    "audit": "GMP",
+    "title": "Master list of documents",
+    "description": "Excel master list document interne Mis à jour\r\nDossier contenant tous les document externe",
+    "owner": "Naoures",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-09",
+    "requirements": [
+      "Excel master list document interne Mis à jour",
+      "Dossier contenant tous les document externe"
+    ],
+    "comments": []
+  },
+  {
+    "id": 8,
+    "num": 8,
+    "audit": "GMP",
+    "title": "External documents (documentation from customer)",
+    "description": "tous les document externe\r\nMasterlist des documents externe",
+    "owner": "Faten",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-09",
+    "requirements": [
+      "tous les document externe",
+      "Masterlist des documents externe"
+    ],
+    "comments": []
+  },
+  {
+    "id": 9,
+    "num": 9,
+    "audit": "GMP",
+    "title": "Document change system",
+    "description": "Procédure de changement",
+    "owner": "Naoures",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-09",
+    "requirements": [
+      "Procédure de changement"
+    ],
+    "comments": []
+  },
+  {
+    "id": 10,
+    "num": 10,
+    "audit": "GMP",
+    "title": "Job duties/responsibilities",
+    "description": "Fiche de fonction de tous les service",
+    "owner": "RH",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-09",
+    "requirements": [
+      "Fiche de fonction de tous les service"
+    ],
+    "comments": []
+  },
+  {
+    "id": 11,
+    "num": 11,
+    "audit": "GMP",
+    "title": "Quality policy training records",
+    "description": "Preuve de formation sur la politique qualité",
+    "owner": "RH",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-09",
+    "requirements": [
+      "Preuve de formation sur la politique qualité"
+    ],
+    "comments": []
+  },
+  {
+    "id": 12,
+    "num": 12,
+    "audit": "GMP",
+    "title": "Quality plans",
+    "description": "Procédure IQC/IPQC-FQC/OQC",
+    "owner": "Naoures/Chaima",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-09",
+    "requirements": [
+      "Procédure IQC/IPQC-FQC/OQC"
+    ],
+    "comments": []
+  },
+  {
+    "id": 13,
+    "num": 13,
+    "audit": "GMP",
+    "title": "Risk assessment and analysis for hygiene",
+    "description": "Analyse de risque hygiène",
+    "owner": "Naoures",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-09",
+    "requirements": [
+      "Analyse de risque hygiène"
+    ],
+    "comments": []
+  },
+  {
+    "id": 14,
+    "num": 14,
+    "audit": "GMP",
+    "title": "Training plan/records/effectiveness assessment records/re-training records",
+    "description": "Plan de formation-preuve de formation-suivi d'éfficacité des formations -preuve de reformation",
+    "owner": "RH",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-09",
+    "requirements": [
+      "Plan de formation-preuve de formation-suivi d'éfficacité des formations -preuve de reformation"
+    ],
+    "comments": []
+  },
+  {
+    "id": 15,
+    "num": 15,
+    "audit": "GMP",
+    "title": "Supplier qualification/selection/evaluation system",
+    "description": "Preuve de qualification fournisseurs( certificat )/Excel d'evaluation des fournisseur/Critère de sélection",
+    "owner": "Faten",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-09",
+    "requirements": [
+      "Preuve de qualification fournisseurs( certificat )/Excel d'evaluation des fournisseur/Critère de sélection"
+    ],
+    "comments": []
+  },
+  {
+    "id": 16,
+    "num": 16,
+    "audit": "GMP",
+    "title": "Suppliers/materials change records",
+    "description": "Analyse de changement : ABS par exemple",
+    "owner": "Faten",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-09",
+    "requirements": [
+      "Analyse de changement : ABS par exemple"
+    ],
+    "comments": []
+  },
+  {
+    "id": 17,
+    "num": 17,
+    "audit": "GMP",
+    "title": "Gauges and measuring devices list",
+    "description": "Liste des équipement laboratoire",
+    "owner": "Chaima Q",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-09",
+    "requirements": [
+      "Liste des équipement laboratoire"
+    ],
+    "comments": []
+  },
+  {
+    "id": 18,
+    "num": 18,
+    "audit": "GMP",
+    "title": "Equipment calibration records",
+    "description": "Certificat d'étalonnage des équipements",
+    "owner": "Chaima Q",
+    "department": "?",
+    "status": 1,
+    "applicable": true,
+    "due": "2026-10-09",
+    "requirements": [
+      "Certificat d'étalonnage des équipements"
+    ],
+    "comments": []
+  },
+  {
+    "id": 19,
+    "num": 19,
+    "audit": "GMP",
+    "title": "Training certificate of internal calibration operator (if applicable)",
+    "description": "NA",
+    "owner": "Chaima Q",
+    "department": "?",
+    "status": 0,
+    "applicable": false,
+    "due": "2026-10-09",
+    "requirements": [
+      "NA"
+    ],
+    "comments": []
+  },
+  {
+    "id": 20,
+    "num": 20,
+    "audit": "GMP",
+    "title": "Hygiene rules",
+    "description": "procédure d'hygiène\r\nProcédure de vetements de travail",
+    "owner": "RH",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-09",
+    "requirements": [
+      "procédure d'hygiène",
+      "Procédure de vetements de travail"
+    ],
+    "comments": []
+  },
+  {
+    "id": 21,
+    "num": 21,
+    "audit": "GMP",
+    "title": "Premise map with staff, product and waste flows:Layout:flux de matière , personnel et déchet",
+    "description": "Flux du personnel,matière et déchets",
+    "owner": "RH",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-09",
+    "requirements": [
+      "Flux du personnel,matière et déchets"
+    ],
+    "comments": []
+  },
+  {
+    "id": 22,
+    "num": 22,
+    "audit": "GMP",
+    "title": "Premise cleaning and disinfecting procedures and records",
+    "description": "Procédure de nettoyage\r\nPlan de nettoyage\r\nformulaire de suivi de nettoyage : ateliers et administration",
+    "owner": "Naoures",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-09",
+    "requirements": [
+      "Procédure de nettoyage",
+      "Plan de nettoyage",
+      "formulaire de suivi de nettoyage : ateliers et administration"
+    ],
+    "comments": []
+  },
+  {
+    "id": 23,
+    "num": 23,
+    "audit": "GMP",
+    "title": "Equipment cleaning and disinfecting procedures and records",
+    "description": "Plan de nettoyage \r\ncopie rempli de 6S  MYCTN-FM-HSE-02 V0 6S  poste de travail- done\r\nCopie rempli de nettoyage des équipements",
+    "owner": "Naoures",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-09",
+    "requirements": [
+      "Plan de nettoyage",
+      "copie rempli de 6S  MYCTN-FM-HSE-02 V0 6S  poste de travail- done",
+      "Copie rempli de nettoyage des équipements"
+    ],
+    "comments": []
+  },
+  {
+    "id": 24,
+    "num": 24,
+    "audit": "GMP",
+    "title": "Preventive Maintenance procedure and records",
+    "description": "plan de maintenance preventif rempli avec les intervention effectuées",
+    "owner": "Hammadi",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-09",
+    "requirements": [
+      "plan de maintenance preventif rempli avec les intervention effectuées"
+    ],
+    "comments": []
+  },
+  {
+    "id": 25,
+    "num": 25,
+    "audit": "GMP",
+    "title": "Purified water production, maintenance, verification procedures(bache à eaux)osmoseur",
+    "description": "Procédure \r\nMaintenance des osmoseur",
+    "owner": "Hammadi",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-09",
+    "requirements": [
+      "Procédure",
+      "Maintenance des osmoseur"
+    ],
+    "comments": []
+  },
+  {
+    "id": 26,
+    "num": 26,
+    "audit": "GMP",
+    "title": "Purified water distribution system map with identification of sampling points : plan de circulation d'eau",
+    "description": "Plan de circulation d'eau  toute en indicant les points de contrôle",
+    "owner": "Hammadi",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-09",
+    "requirements": [
+      "Plan de circulation d'eau  toute en indicant les points de contrôle"
+    ],
+    "comments": []
+  },
+  {
+    "id": 27,
+    "num": 27,
+    "audit": "GMP",
+    "title": "Water tanks and distribution system disinfection records: desinfection et tracabilité de désinfection",
+    "description": "Tracabilité e désinfection de l'eau",
+    "owner": "Hammadi",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-09",
+    "requirements": [
+      "Tracabilité e désinfection de l'eau"
+    ],
+    "comments": []
+  },
+  {
+    "id": 28,
+    "num": 28,
+    "audit": "GMP",
+    "title": "Water physical, chemical and microbiological quality check records: Med control",
+    "description": "Rapport med control d'analyse d'eau ( chaque mois)",
+    "owner": "Hammadi",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-09",
+    "requirements": [
+      "Rapport med control d'analyse d'eau ( chaque mois)"
+    ],
+    "comments": []
+  },
+  {
+    "id": 29,
+    "num": 29,
+    "audit": "GMP",
+    "title": "Air treatment units maintenance procedures and records",
+    "description": "Procédure de maintenance de compresseur \r\nSuivi ( preuve de maintenance)",
+    "owner": "Hamadi",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-09",
+    "requirements": [
+      "Procédure de maintenance de compresseur",
+      "Suivi ( preuve de maintenance)"
+    ],
+    "comments": []
+  },
+  {
+    "id": 30,
+    "num": 30,
+    "audit": "GMP",
+    "title": "Air quality check procedures and records",
+    "description": "Rapprt de vérification de qualité d'air par L2A",
+    "owner": "Hamadi",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-09",
+    "requirements": [
+      "Rapprt de vérification de qualité d'air par L2A"
+    ],
+    "comments": []
+  },
+  {
+    "id": 31,
+    "num": 31,
+    "audit": "GMP",
+    "title": "Materials logistic method (Kanban, FIFO, etc)",
+    "description": "Procédure logistique\r\nFlux matière première",
+    "owner": "Faten",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-09",
+    "requirements": [
+      "Procédure logistique",
+      "Flux matière première"
+    ],
+    "comments": []
+  },
+  {
+    "id": 32,
+    "num": 32,
+    "audit": "GMP",
+    "title": "Inspection instructions/sampling plan (IQC/IPQC/OQC/FQC, etc)",
+    "description": "Critère de jugement\r\nPlan d'échantionnage",
+    "owner": "Naoures",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-09",
+    "requirements": [
+      "Critère de jugement",
+      "Plan d'échantionnage"
+    ],
+    "comments": []
+  },
+  {
+    "id": 33,
+    "num": 33,
+    "audit": "GMP",
+    "title": "Inspection records (IQC/IPQC/OQC/FQC, etc)",
+    "description": "Rapport qualité",
+    "owner": "Naoures/Chaima",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-09",
+    "requirements": [
+      "Rapport qualité"
+    ],
+    "comments": []
+  },
+  {
+    "id": 34,
+    "num": 34,
+    "audit": "GMP",
+    "title": "Storage (incoming materials, semi-finished products, finished products) cleaning procedures and records",
+    "description": "MYCTN-FM-HSE-02 V0 6S  poste de travail- done",
+    "owner": "Faten",
+    "department": "?",
+    "status": 1,
+    "applicable": true,
+    "due": "2026-10-09",
+    "requirements": [
+      "MYCTN-FM-HSE-02 V0 6S  poste de travail- done"
+    ],
+    "comments": []
+  },
+  {
+    "id": 35,
+    "num": 35,
+    "audit": "GMP",
+    "title": "Machines operation instructions/procedure manual",
+    "description": "SOP machines",
+    "owner": "Saif/Slah",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-09",
+    "requirements": [
+      "SOP machines"
+    ],
+    "comments": []
+  },
+  {
+    "id": 36,
+    "num": 36,
+    "audit": "GMP",
+    "title": "Working instructions",
+    "description": "Document 3eme niveau",
+    "owner": "Slah/Saif",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-09",
+    "requirements": [
+      "Document 3eme niveau"
+    ],
+    "comments": []
+  },
+  {
+    "id": 37,
+    "num": 37,
+    "audit": "GMP",
+    "title": "Production planning",
+    "description": "plan de production",
+    "owner": "Faten",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-09",
+    "requirements": [
+      "plan de production"
+    ],
+    "comments": []
+  },
+  {
+    "id": 38,
+    "num": 38,
+    "audit": "GMP",
+    "title": "Production change / Line start-up procedure and records",
+    "description": "Procédure \"MYCTN-OP-PD-01 V0 Procédure de maîtrise de la réalisation des produits et services\"\r\nCopie des checklist démarrage rempli",
+    "owner": "Walid",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-09",
+    "requirements": [
+      "Procédure \"MYCTN-OP-PD-01 V0 Procédure de maîtrise de la réalisation des produits et services\"",
+      "Copie des checklist démarrage rempli"
+    ],
+    "comments": []
+  },
+  {
+    "id": 39,
+    "num": 39,
+    "audit": "GMP",
+    "title": "Trial production records",
+    "description": "",
+    "owner": "Saif/Chaima",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-09",
+    "requirements": [],
+    "comments": []
+  },
+  {
+    "id": 40,
+    "num": 40,
+    "audit": "GMP",
+    "title": "In-process/production control procedure",
+    "description": "Procédure IPQC",
+    "owner": "Naoures",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-09",
+    "requirements": [
+      "Procédure IPQC"
+    ],
+    "comments": []
+  },
+  {
+    "id": 41,
+    "num": 41,
+    "audit": "GMP",
+    "title": "First parts check/test/validation records",
+    "description": "Rapport 1er article rempli",
+    "owner": "Naoures",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-09",
+    "requirements": [
+      "Rapport 1er article rempli"
+    ],
+    "comments": []
+  },
+  {
+    "id": 42,
+    "num": 42,
+    "audit": "GMP",
+    "title": "Non-compliance control procedure/records (incoming materials/semi-products/finished products)",
+    "description": "Procédure de non-conformité+ rapport d'anomalie rempli",
+    "owner": "Naoures",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-09",
+    "requirements": [
+      "Procédure de non-conformité+ rapport d'anomalie rempli"
+    ],
+    "comments": []
+  },
+  {
+    "id": 43,
+    "num": 43,
+    "audit": "GMP",
+    "title": "Packing methods/instructions Page 3 of 4 COSMETICS GMP Audit Preparation Document",
+    "description": "SOP emballage",
+    "owner": "Seif-Slah",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-09",
+    "requirements": [
+      "SOP emballage"
+    ],
+    "comments": []
+  },
+  {
+    "id": 44,
+    "num": 44,
+    "audit": "GMP",
+    "title": "Batch File (records of traceability)",
+    "description": "Formulaire de tracabilité\r\nExemple de formulaire rempli",
+    "owner": "Walid",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-09",
+    "requirements": [
+      "Formulaire de tracabilité",
+      "Exemple de formulaire rempli"
+    ],
+    "comments": []
+  },
+  {
+    "id": 45,
+    "num": 45,
+    "audit": "GMP",
+    "title": "Technical file for each batch produced",
+    "description": "Fiche technique ( TS/MSDS)",
+    "owner": "Faten",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-09",
+    "requirements": [
+      "Fiche technique ( TS/MSDS)"
+    ],
+    "comments": []
+  },
+  {
+    "id": 46,
+    "num": 46,
+    "audit": "GMP",
+    "title": "Traceability system procedure",
+    "description": "Procédure de tracabilité",
+    "owner": "Naoures",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-09",
+    "requirements": [
+      "Procédure de tracabilité"
+    ],
+    "comments": []
+  },
+  {
+    "id": 47,
+    "num": 47,
+    "audit": "GMP",
+    "title": "Shipment registration records",
+    "description": "",
+    "owner": "Faten",
+    "department": "?",
+    "status": 1,
+    "applicable": true,
+    "due": "2026-10-09",
+    "requirements": [],
+    "comments": []
+  },
+  {
+    "id": 48,
+    "num": 48,
+    "audit": "GMP",
+    "title": "Customer complaint handling procedure and records",
+    "description": "Procédure de réclamation client et formulaire associé",
+    "owner": "Naoures",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-09",
+    "requirements": [
+      "Procédure de réclamation client et formulaire associé"
+    ],
+    "comments": []
+  },
+  {
+    "id": 49,
+    "num": 49,
+    "audit": "GMP",
+    "title": "Key Performance Indicators for quality and follow-up",
+    "description": "Dashboard qualité + dashborad production + dashboard RH",
+    "owner": "Naoures",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-09",
+    "requirements": [
+      "Dashboard qualité + dashborad production + dashboard RH"
+    ],
+    "comments": []
+  },
+  {
+    "id": 50,
+    "num": 50,
+    "audit": "GMP",
+    "title": "Recalls/crisis management procedures",
+    "description": "Procédure de rappel produit",
+    "owner": "Naoures",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-09",
+    "requirements": [
+      "Procédure de rappel produit"
+    ],
+    "comments": []
+  },
+  {
+    "id": 51,
+    "num": 51,
+    "audit": "GMP",
+    "title": "Mock recall records",
+    "description": "Procédure de rappel produit",
+    "owner": "Naoures",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-09",
+    "requirements": [
+      "Procédure de rappel produit"
+    ],
+    "comments": []
+  },
+  {
+    "id": 52,
+    "num": 52,
+    "audit": "GMP",
+    "title": "Internal audit process/plan/report/corrective & preventive action record",
+    "description": "Plan d'audit ,rapport d'audit ,corrective &preventive report",
+    "owner": "Naoures",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-09",
+    "requirements": [
+      "Plan d'audit ,rapport d'audit ,corrective &preventive report"
+    ],
+    "comments": []
+  },
+  {
+    "id": 53,
+    "num": 53,
+    "audit": "GMP",
+    "title": "Statistical Process Control charts/ Response Plan",
+    "description": "SPC form",
+    "owner": "Naoures",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-09",
+    "requirements": [
+      "SPC form"
+    ],
+    "comments": []
+  },
+  {
+    "id": 54,
+    "num": 54,
+    "audit": "GMP",
+    "title": "Products Bill of Material / Bill of Substances",
+    "description": "BOM KiKO",
+    "owner": "Faten",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-09",
+    "requirements": [
+      "BOM KiKO"
+    ],
+    "comments": []
+  },
+  {
+    "id": 101,
+    "num": 1,
+    "audit": "SMETA",
+    "title": "Factory profile/Employee No.& structure/Production Capability/ (Brands)Marketing",
+    "description": "01 – MYC Factory Profile\r\n02 – Organisation Chart\r\n03 – Employee Statistics – 2026\r\n04 – Department & Employee Structure\r\n05 – Production Process Flow\r\n06 – Production Capacity\r\n07 – Product List\r\n08 – Brands & Customers\r\n09 – Subcontractors List (si applicable)\r\nPrésentation de l'entreprise",
+    "owner": "SL",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-16",
+    "requirements": [
+      "01 – MYC Factory Profile",
+      "02 – Organisation Chart",
+      "03 – Employee Statistics – 2026",
+      "04 – Department & Employee Structure",
+      "05 – Production Process Flow",
+      "06 – Production Capacity",
+      "07 – Product List",
+      "08 – Brands & Customers",
+      "09 – Subcontractors List (si applicable)",
+      "Présentation de l'entreprise"
+    ],
+    "comments": []
+  },
+  {
+    "id": 102,
+    "num": 2,
+    "audit": "SMETA",
+    "title": "Organization chart",
+    "description": "Organigramme",
+    "owner": "RH",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-16",
+    "requirements": [
+      "Organigramme"
+    ],
+    "comments": []
+  },
+  {
+    "id": 103,
+    "num": 3,
+    "audit": "SMETA",
+    "title": "Factory floor plans",
+    "description": "Plan de l'entreprise",
+    "owner": "Chaima",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-16",
+    "requirements": [
+      "Plan de l'entreprise"
+    ],
+    "comments": []
+  },
+  {
+    "id": 104,
+    "num": 4,
+    "audit": "SMETA",
+    "title": "Business license",
+    "description": "Copie",
+    "owner": "Chaima",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-16",
+    "requirements": [
+      "Copie"
+    ],
+    "comments": []
+  },
+  {
+    "id": 105,
+    "num": 5,
+    "audit": "SMETA",
+    "title": "Employee manual/handbook, Factory rules & regulations/ Disciplinary practices policy and Records",
+    "description": "01 – Employee Handbook / Manuel du personnel\r\n02 – Factory Rules & Regulations / Règlement intérieur\r\n03 – Disciplinary Practices Policy\r\n04 – Disciplinary Procedure\r\n05 – Disciplinary Records – 2026\r\n06 – Employee Acknowledgement Records\r\n07 – Employee Grievance Procedure\r\n08 – Communication / Training Records",
+    "owner": "RH/N",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-16",
+    "requirements": [
+      "01 – Employee Handbook / Manuel du personnel",
+      "02 – Factory Rules & Regulations / Règlement intérieur",
+      "03 – Disciplinary Practices Policy",
+      "04 – Disciplinary Procedure",
+      "05 – Disciplinary Records – 2026",
+      "06 – Employee Acknowledgement Records",
+      "07 – Employee Grievance Procedure",
+      "08 – Communication / Training Records"
+    ],
+    "comments": []
+  },
+  {
+    "id": 106,
+    "num": 6,
+    "audit": "SMETA",
+    "title": "Dormitory regulations",
+    "description": "",
+    "owner": "NA",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-16",
+    "requirements": [],
+    "comments": []
+  },
+  {
+    "id": 107,
+    "num": 7,
+    "audit": "SMETA",
+    "title": "Recruitment policies & procedures",
+    "description": "Procédure de récrutement",
+    "owner": "RH/N",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-16",
+    "requirements": [
+      "Procédure de récrutement"
+    ],
+    "comments": []
+  },
+  {
+    "id": 108,
+    "num": 8,
+    "audit": "SMETA",
+    "title": "Employees' personal files/ Employment registration/roster (all employees)",
+    "description": "Dossier des personnel:  01 – Registre du personnel 2026\r\n         02 – Contrats de travail\r\n        03 – Dossiers individuels des salariés\r\n        04 – Documents d’enregistrement / déclaration\r\n        05 – Salariés temporaires / CDD\r\n        06 – Nouveaux recrutements\r\n        07 – Salariés sortants / dossiers archivés",
+    "owner": "RH/G",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-16",
+    "requirements": [
+      "Dossier des personnel:  01 – Registre du personnel 2026",
+      "02 – Contrats de travail",
+      "03 – Dossiers individuels des salariés",
+      "04 – Documents d’enregistrement / déclaration",
+      "05 – Salariés temporaires / CDD",
+      "06 – Nouveaux recrutements",
+      "07 – Salariés sortants / dossiers archivés"
+    ],
+    "comments": []
+  },
+  {
+    "id": 109,
+    "num": 9,
+    "audit": "SMETA",
+    "title": "Labor contracts (all employees)",
+    "description": "04 – Contrats de travail\r\n        01– Liste de contrôle des contrats\r\n         02 – Contrats CDI\r\n        03 – Contrats CDD\r\n        04 – Contrats période d'essai\r\n        05 – Avenants aux contrats\r\n        06 – Contrats / dossiers des salariés sortants",
+    "owner": "RH/G",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-16",
+    "requirements": [
+      "04 – Contrats de travail",
+      "01– Liste de contrôle des contrats",
+      "02 – Contrats CDI",
+      "03 – Contrats CDD",
+      "04 – Contrats période d'essai",
+      "05 – Avenants aux contrats",
+      "06 – Contrats / dossiers des salariés sortants"
+    ],
+    "comments": []
+  },
+  {
+    "id": 110,
+    "num": 10,
+    "audit": "SMETA",
+    "title": "Young worker health examination & health examination records (if applicable)",
+    "description": "NA",
+    "owner": "NA",
+    "department": "?",
+    "status": 0,
+    "applicable": false,
+    "due": "2026-10-16",
+    "requirements": [
+      "NA"
+    ],
+    "comments": []
+  },
+  {
+    "id": 111,
+    "num": 11,
+    "audit": "SMETA",
+    "title": "List of young workers/ registration approval from local labor bureau/regulations on shift arrangement for young workers",
+    "description": "",
+    "owner": "RH",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-16",
+    "requirements": [],
+    "comments": []
+  },
+  {
+    "id": 112,
+    "num": 12,
+    "audit": "SMETA",
+    "title": "Leave records",
+    "description": "06 – Congés & Absences\r\n        01 – Registre des congés 2026\r\n        02 – Soldes de congés par salarié\r\n        03 – Demandes de congés\r\n        04 – Congés maladie & justificatifs\r\n        05 – Congés maternité / familiaux\r\n        06 – Registre des absences",
+    "owner": "RH/G",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-16",
+    "requirements": [
+      "06 – Congés & Absences",
+      "01 – Registre des congés 2026",
+      "02 – Soldes de congés par salarié",
+      "03 – Demandes de congés",
+      "04 – Congés maladie & justificatifs",
+      "05 – Congés maternité / familiaux",
+      "06 – Registre des absences"
+    ],
+    "comments": []
+  },
+  {
+    "id": 113,
+    "num": 13,
+    "audit": "SMETA",
+    "title": "Resignation records",
+    "description": "07 – Démissions & Départs\r\n        01 – Registre des démissions 2026\r\n         02 – Lettres de démission\r\n        03 – Suivi des préavis\r\n        04 – Documents de fin de contrat\r\n        05 – Solde de tout compte\r\n        06 – Suivi des congés des salariés sortants\r\n        07 – Entretiens de sortie",
+    "owner": "RH/G",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-16",
+    "requirements": [
+      "07 – Démissions & Départs",
+      "01 – Registre des démissions 2026",
+      "02 – Lettres de démission",
+      "03 – Suivi des préavis",
+      "04 – Documents de fin de contrat",
+      "05 – Solde de tout compte",
+      "06 – Suivi des congés des salariés sortants",
+      "07 – Entretiens de sortie"
+    ],
+    "comments": []
+  },
+  {
+    "id": 114,
+    "num": 14,
+    "audit": "SMETA",
+    "title": "Awards & Penalty Records/Warning notification letters",
+    "description": "08 – Récompenses & Sanctions\r\n        01 – Procédure disciplinaire\r\n        02 – Registre des sanctions 2026\r\n        03 – Lettres d'avertissement\r\n         04 – Réponses / observations des salariés\r\n        05 – Registre des récompenses / primes\r\n        06 – Dossiers disciplinaires archivés",
+    "owner": "RH/N",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-16",
+    "requirements": [
+      "08 – Récompenses & Sanctions",
+      "01 – Procédure disciplinaire",
+      "02 – Registre des sanctions 2026",
+      "03 – Lettres d'avertissement",
+      "04 – Réponses / observations des salariés",
+      "05 – Registre des récompenses / primes",
+      "06 – Dossiers disciplinaires archivés"
+    ],
+    "comments": []
+  },
+  {
+    "id": 115,
+    "num": 15,
+    "audit": "SMETA",
+    "title": "Meeting minutes of union/Selection program and Responsibility of workers’ Rep./Complaint& handling Record",
+    "description": "09 – Représentation & Réclamations\r\n         01 – Procédure de représentation des travailleurs\r\n         02 – Procédure d'élection / sélection\r\n         03 – Liste des représentants\r\n        04 – Responsabilités des représentants\r\n         05 – Procès-verbaux des réunions\r\n         06 – Procédure de gestion des réclamations\r\n         07 – Registre des réclamations 2026\r\n         08 – Fiches de traitement des réclamations\r\n         09 – Preuves de communication / affichage",
+    "owner": "RH",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-16",
+    "requirements": [
+      "09 – Représentation & Réclamations",
+      "01 – Procédure de représentation des travailleurs",
+      "02 – Procédure d'élection / sélection",
+      "03 – Liste des représentants",
+      "04 – Responsabilités des représentants",
+      "05 – Procès-verbaux des réunions",
+      "06 – Procédure de gestion des réclamations",
+      "07 – Registre des réclamations 2026",
+      "08 – Fiches de traitement des réclamations",
+      "09 – Preuves de communication / affichage"
+    ],
+    "comments": []
+  },
+  {
+    "id": 116,
+    "num": 16,
+    "audit": "SMETA",
+    "title": "Timecards /attendant records (12 months if full audit / records since previous audit if follow-up)",
+    "description": "10 – Pointage & Présence\r\n         01 – Registres de pointage – 12 mois\r\n         02 – Feuilles de présence\r\n         03 – Planning des équipes\r\n         04 – Registre des heures supplémentaires\r\n         05 – Registre des absences\r\n         06 – Registre des congés\r\n        07 – Corrections de pointage\r\n        08 – Synthèse mensuelle des heures",
+    "owner": "RH/N",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-16",
+    "requirements": [
+      "10 – Pointage & Présence",
+      "01 – Registres de pointage – 12 mois",
+      "02 – Feuilles de présence",
+      "03 – Planning des équipes",
+      "04 – Registre des heures supplémentaires",
+      "05 – Registre des absences",
+      "06 – Registre des congés",
+      "07 – Corrections de pointage",
+      "08 – Synthèse mensuelle des heures"
+    ],
+    "comments": []
+  },
+  {
+    "id": 117,
+    "num": 17,
+    "audit": "SMETA",
+    "title": "Leave records (Paid annual leave/Maternity leave/Marriage & Funeral leave)",
+    "description": "11 – Registres des congés\r\n        01 – Congés annuels payés – 2026\r\n         02 – Congés de maternité\r\n        03 – Congés de mariage\r\n        04 – Congés pour décès\r\n        05 – Demandes et autorisations\r\n        06 – Justificatifs\r\n        07 – Suivi des soldes de congés",
+    "owner": "RH/G",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-16",
+    "requirements": [
+      "11 – Registres des congés",
+      "01 – Congés annuels payés – 2026",
+      "02 – Congés de maternité",
+      "03 – Congés de mariage",
+      "04 – Congés pour décès",
+      "05 – Demandes et autorisations",
+      "06 – Justificatifs",
+      "07 – Suivi des soldes de congés"
+    ],
+    "comments": []
+  },
+  {
+    "id": 118,
+    "num": 18,
+    "audit": "SMETA",
+    "title": "Consolidated working hours permit by local labor bureau/Extended Overtime Hours Waiver, if applicable",
+    "description": "Working Hours Permit / Authorization – si applicable\r\nExtended Overtime Hours Waiver – si applicable\r\nDemandes d’autorisation d’heures supplémentaires\r\nRegistre des heures supplémentaires\r\nTimecards / pointage – 12 mois\r\nPlanning des équipes\r\nProcédure Working Hours & Overtime\r\nPreuves de paiement des heures supplémentaires\r\nCorrespondances avec l’autorité du travail, s’il y en a\r\nTableau de synthèse des heures travaillées et OT",
+    "owner": "RH/N",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-16",
+    "requirements": [
+      "Working Hours Permit / Authorization – si applicable",
+      "Extended Overtime Hours Waiver – si applicable",
+      "Demandes d’autorisation d’heures supplémentaires",
+      "Registre des heures supplémentaires",
+      "Timecards / pointage – 12 mois",
+      "Planning des équipes",
+      "Procédure Working Hours & Overtime",
+      "Preuves de paiement des heures supplémentaires",
+      "Correspondances avec l’autorité du travail, s’il y en a",
+      "Tableau de synthèse des heures travaillées et OT"
+    ],
+    "comments": []
+  },
+  {
+    "id": 119,
+    "num": 19,
+    "audit": "SMETA",
+    "title": "Legal/ Local official minimum wage Document",
+    "description": "Copie du texte officiel/JORT applicable\r\nDernières mises à jour réglementaires\r\nConvention collective applicable, si concernée\r\nTableau de comparaison salaire légal / salaire MYC\r\nÉchantillon de contrats\r\nBulletins de salaire\r\nRegistre de veille réglementaire",
+    "owner": "RH/N",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-16",
+    "requirements": [
+      "Copie du texte officiel/JORT applicable",
+      "Dernières mises à jour réglementaires",
+      "Convention collective applicable, si concernée",
+      "Tableau de comparaison salaire légal / salaire MYC",
+      "Échantillon de contrats",
+      "Bulletins de salaire",
+      "Registre de veille réglementaire"
+    ],
+    "comments": []
+  },
+  {
+    "id": 120,
+    "num": 20,
+    "audit": "SMETA",
+    "title": "Payroll records with employees' signatures (12 months if full audit / records since previous audit if follow-up)",
+    "description": "Registres de paie mensuels\r\nBulletins de salaire\r\nRegistre des employés\r\nPreuves de paiement bancaire\r\nRegistres signés, lorsque la signature est utilisée\r\nJustificatifs des primes et heures supplémentaires\r\nJustificatifs des retenues\r\nDéclarations sociales correspondantes\r\nDocuments de fin de contrat, si applicable",
+    "owner": "RH/G",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-16",
+    "requirements": [
+      "Registres de paie mensuels",
+      "Bulletins de salaire",
+      "Registre des employés",
+      "Preuves de paiement bancaire",
+      "Registres signés, lorsque la signature est utilisée",
+      "Justificatifs des primes et heures supplémentaires",
+      "Justificatifs des retenues",
+      "Déclarations sociales correspondantes",
+      "Documents de fin de contrat, si applicable"
+    ],
+    "comments": []
+  },
+  {
+    "id": 121,
+    "num": 21,
+    "audit": "SMETA",
+    "title": "Production records of piece rate workers/Piece rate records",
+    "description": "NA",
+    "owner": "RH",
+    "department": "?",
+    "status": 0,
+    "applicable": false,
+    "due": "2026-10-16",
+    "requirements": [
+      "NA"
+    ],
+    "comments": []
+  },
+  {
+    "id": 122,
+    "num": 22,
+    "audit": "SMETA",
+    "title": "Wage deduction records",
+    "description": "Registre des retenues salariales\r\nBulletins de salaire\r\nDemandes d'avances sur salaire\r\nAccords de remboursement — si applicable\r\nAutorisations écrites des salariés — si applicable\r\nRegistres de présence et d'absence\r\nDéclarations sociales et fiscales\r\nProcédure de paie\r\nDocuments relatifs aux retenues légales",
+    "owner": "RH/G",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-16",
+    "requirements": [
+      "Registre des retenues salariales",
+      "Bulletins de salaire",
+      "Demandes d'avances sur salaire",
+      "Accords de remboursement — si applicable",
+      "Autorisations écrites des salariés — si applicable",
+      "Registres de présence et d'absence",
+      "Déclarations sociales et fiscales",
+      "Procédure de paie",
+      "Documents relatifs aux retenues légales"
+    ],
+    "comments": []
+  },
+  {
+    "id": 123,
+    "num": 23,
+    "audit": "SMETA",
+    "title": "Social security insurance (injury / retirement / medical / unemployment etc.) payment receipts/ invoice/Approval from local government/Registration certificate/personnel list",
+    "description": "Certificat d'affiliation de MYC\r\nDocuments d'enregistrement auprès des organismes sociaux\r\nDéclarations sociales mensuelles\r\nQuittances / reçus de paiement des cotisations\r\nFactures ou avis de cotisation, si disponibles\r\nListes nominatives des salariés déclarés\r\nDocuments relatifs aux accidents du travail\r\nDocuments relatifs à la couverture sociale\r\nDocuments d'affiliation des nouveaux salariés\r\nDocuments de mise à jour / radiation des salariés sortants\r\nDocuments de l'agence d'intérim, si applicable",
+    "owner": "Saber",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-16",
+    "requirements": [
+      "Certificat d'affiliation de MYC",
+      "Documents d'enregistrement auprès des organismes sociaux",
+      "Déclarations sociales mensuelles",
+      "Quittances / reçus de paiement des cotisations",
+      "Factures ou avis de cotisation, si disponibles",
+      "Listes nominatives des salariés déclarés",
+      "Documents relatifs aux accidents du travail",
+      "Documents relatifs à la couverture sociale",
+      "Documents d'affiliation des nouveaux salariés",
+      "Documents de mise à jour / radiation des salariés sortants",
+      "Documents de l'agence d'intérim, si applicable"
+    ],
+    "comments": []
+  },
+  {
+    "id": 124,
+    "num": 24,
+    "audit": "SMETA",
+    "title": "Health & safety policy/ Regulations and rules",
+    "description": "Politique qualité,Env et SST",
+    "owner": "HSE",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-16",
+    "requirements": [
+      "Politique qualité,Env et SST"
+    ],
+    "comments": []
+  },
+  {
+    "id": 125,
+    "num": 25,
+    "audit": "SMETA",
+    "title": "Certificate of Inspection for Completed Building Construction/ Registration Records",
+    "description": "Certificat / document d'enregistrement du bâtiment\r\nCertificat d'achèvement de construction — si applicable\r\nCertificat / rapport d'inspection du bâtiment\r\nAutorisation d'exploitation — si applicable\r\nPlans architecturaux approuvés\r\nDocuments relatifs aux modifications/extensions\r\nDocuments de sécurité incendie\r\nContrat de location — si MYC est locataire\r\nDocuments fournis par le propriétaire",
+    "owner": "Chaima",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-16",
+    "requirements": [
+      "Certificat / document d'enregistrement du bâtiment",
+      "Certificat d'achèvement de construction — si applicable",
+      "Certificat / rapport d'inspection du bâtiment",
+      "Autorisation d'exploitation — si applicable",
+      "Plans architecturaux approuvés",
+      "Documents relatifs aux modifications/extensions",
+      "Documents de sécurité incendie",
+      "Contrat de location — si MYC est locataire",
+      "Documents fournis par le propriétaire"
+    ],
+    "comments": []
+  },
+  {
+    "id": 126,
+    "num": 26,
+    "audit": "SMETA",
+    "title": "Fire-Fighting Acceptance Inspection Certificate/ Report",
+    "description": "Certificat / PV de réception des installations incendie\r\nRapport de contrôle du système incendie\r\nRegistre des extincteurs\r\nCertificats / rapports de contrôle des extincteurs\r\nRapports de contrôle du système d'alarme\r\nRapports de contrôle du système de détection — si présent\r\nRapports de contrôle du réseau incendie — si présent\r\nRapports de contrôle de la pompe incendie — si présente",
+    "owner": "Hammadi",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-16",
+    "requirements": [
+      "Certificat / PV de réception des installations incendie",
+      "Rapport de contrôle du système incendie",
+      "Registre des extincteurs",
+      "Certificats / rapports de contrôle des extincteurs",
+      "Rapports de contrôle du système d'alarme",
+      "Rapports de contrôle du système de détection — si présent",
+      "Rapports de contrôle du réseau incendie — si présent",
+      "Rapports de contrôle de la pompe incendie — si présente"
+    ],
+    "comments": []
+  },
+  {
+    "id": 127,
+    "num": 27,
+    "audit": "SMETA",
+    "title": "Safety officer Certificate",
+    "description": "Désignation du responsable sécurité\r\nFiche de poste\r\nCertificat / attestation de qualification\r\nCertificat SST / premiers secours\r\nFormation incendie\r\nFormations HSE\r\nAnalyse des risques HSE\r\nRapports d'inspection HSE\r\nRapports d'exercices d'urgence\r\nSuivi des formations et renouvellements",
+    "owner": "Naoures *2",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-16",
+    "requirements": [
+      "Désignation du responsable sécurité",
+      "Fiche de poste",
+      "Certificat / attestation de qualification",
+      "Certificat SST / premiers secours",
+      "Formation incendie",
+      "Formations HSE",
+      "Analyse des risques HSE",
+      "Rapports d'inspection HSE",
+      "Rapports d'exercices d'urgence",
+      "Suivi des formations et renouvellements"
+    ],
+    "comments": [
+      "Mettre dans le planning de formation (26/27)"
+    ]
+  },
+  {
+    "id": 128,
+    "num": 28,
+    "audit": "SMETA",
+    "title": "Security guard regulation & job description/security guard certificate",
+    "description": "Liste des agents de sécurité\r\nContrat avec la société de sécurité — si externalisé\r\nAutorisation / documents réglementaires de la société — si applicable\r\nFiches de poste des agents\r\nCertificats / qualifications\r\nFormations sécurité\r\nProcédure de contrôle d'accès\r\nRegistre visiteurs\r\nRegistre des incidents\r\nPlanning des agents\r\nRegistre de présence / pointage\r\nÉvaluation de la société de sécurité",
+    "owner": "RH/G",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-16",
+    "requirements": [
+      "Liste des agents de sécurité",
+      "Contrat avec la société de sécurité — si externalisé",
+      "Autorisation / documents réglementaires de la société — si applicable",
+      "Fiches de poste des agents",
+      "Certificats / qualifications",
+      "Formations sécurité",
+      "Procédure de contrôle d'accès",
+      "Registre visiteurs",
+      "Registre des incidents",
+      "Planning des agents",
+      "Registre de présence / pointage",
+      "Évaluation de la société de sécurité"
+    ],
+    "comments": []
+  },
+  {
+    "id": 129,
+    "num": 29,
+    "audit": "SMETA",
+    "title": "Fire drill program & records and fire evacuation plan & procedure (including pictures)",
+    "description": "Plan d'operation blanche,rapport d'exercice blanc,procédure",
+    "owner": "HSE",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-16",
+    "requirements": [
+      "Plan d'operation blanche,rapport d'exercice blanc,procédure"
+    ],
+    "comments": []
+  },
+  {
+    "id": 130,
+    "num": 30,
+    "audit": "SMETA",
+    "title": "Sanitation Permit for Kitchen/ Health Certificate of kitchen employee",
+    "description": "NA",
+    "owner": "NA",
+    "department": "?",
+    "status": 0,
+    "applicable": false,
+    "due": "2026-10-16",
+    "requirements": [
+      "NA"
+    ],
+    "comments": []
+  },
+  {
+    "id": 131,
+    "num": 31,
+    "audit": "SMETA",
+    "title": "Trained first aider certificate",
+    "description": "Certificat des secouristes",
+    "owner": "RH",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-16",
+    "requirements": [
+      "Certificat des secouristes"
+    ],
+    "comments": []
+  },
+  {
+    "id": 132,
+    "num": 32,
+    "audit": "SMETA",
+    "title": "Qualified certificate of doctor or nurse， if applicable",
+    "description": "Contrat medecine de travail",
+    "owner": "NA",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-16",
+    "requirements": [
+      "Contrat medecine de travail"
+    ],
+    "comments": []
+  },
+  {
+    "id": 133,
+    "num": 33,
+    "audit": "SMETA",
+    "title": "Accident, injury reports & records/Precaution Measures on Reoccurrence",
+    "description": "Registre des accidents",
+    "owner": "HSE",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-16",
+    "requirements": [
+      "Registre des accidents"
+    ],
+    "comments": []
+  },
+  {
+    "id": 134,
+    "num": 34,
+    "audit": "SMETA",
+    "title": "Register of elevator & lift and annual inspection Certificate",
+    "description": "NA",
+    "owner": "Hammadi",
+    "department": "?",
+    "status": 0,
+    "applicable": false,
+    "due": "2026-10-16",
+    "requirements": [
+      "NA"
+    ],
+    "comments": []
+  },
+  {
+    "id": 135,
+    "num": 35,
+    "audit": "SMETA",
+    "title": "Register of pressure vessels & boilers and annual inspection certificate",
+    "description": "Registre des appareils sous pression\r\nFiches techniques des équipements\r\nPlaques signalétiques / caractéristiques\r\nCertificats d'inspection réglementaire\r\nRapports d'inspection\r\nRapports de maintenance\r\nContrôle des soupapes de sécurité\r\nContrôle des manomètres",
+    "owner": "Hammadi",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-16",
+    "requirements": [
+      "Registre des appareils sous pression",
+      "Fiches techniques des équipements",
+      "Plaques signalétiques / caractéristiques",
+      "Certificats d'inspection réglementaire",
+      "Rapports d'inspection",
+      "Rapports de maintenance",
+      "Contrôle des soupapes de sécurité",
+      "Contrôle des manomètres"
+    ],
+    "comments": []
+  },
+  {
+    "id": 136,
+    "num": 36,
+    "audit": "SMETA",
+    "title": "Specialized safety training certificate (Valid safety operation certificate of Lift / Forklift vehicle/Qualified Electrician/ Electric welding operator certificate/Operator certificate of boiler)",
+    "description": "01 – Matrice des habilitations\r\n02 – Certificats conducteurs chariots élévateurs\r\n03 – Certificats opérateurs appareils de levage\r\n08 – Aptitudes médicales\r\n09 – Formations sécurité",
+    "owner": "SP",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-16",
+    "requirements": [
+      "01 – Matrice des habilitations",
+      "02 – Certificats conducteurs chariots élévateurs",
+      "03 – Certificats opérateurs appareils de levage",
+      "08 – Aptitudes médicales",
+      "09 – Formations sécurité"
+    ],
+    "comments": [
+      "Training"
+    ]
+  },
+  {
+    "id": 137,
+    "num": 37,
+    "audit": "SMETA",
+    "title": "List of chemical / Approval certificate of chemical warehouse/register & storage record",
+    "description": "Liste des produits chimiques\r\nFDS de tous les produits\r\nAutorisation / certificat du magasin chimique — si applicable\r\nRegistre de stockage des produits chimiques\r\nRegistre des entrées et sorties\r\nInventaire physique\r\nÉvaluation des risques chimiques\r\nProcédure de stockage et manipulation\r\nProcédure de gestion des déversements\r\nFormation du personnel\r\nContrôle périodique du magasin\r\nRegistre d'élimination des déchets chimiques",
+    "owner": "SP",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-16",
+    "requirements": [
+      "Liste des produits chimiques",
+      "FDS de tous les produits",
+      "Autorisation / certificat du magasin chimique — si applicable",
+      "Registre de stockage des produits chimiques",
+      "Registre des entrées et sorties",
+      "Inventaire physique",
+      "Évaluation des risques chimiques",
+      "Procédure de stockage et manipulation",
+      "Procédure de gestion des déversements",
+      "Formation du personnel",
+      "Contrôle périodique du magasin",
+      "Registre d'élimination des déchets chimiques"
+    ],
+    "comments": []
+  },
+  {
+    "id": 138,
+    "num": 38,
+    "audit": "SMETA",
+    "title": "Chemical Safety Precaution Measures/MSDS (material safety data sheet) of dangerous chemicals",
+    "description": "FDS de tous les produit chimique",
+    "owner": "SP",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-16",
+    "requirements": [
+      "FDS de tous les produit chimique"
+    ],
+    "comments": []
+  },
+  {
+    "id": 139,
+    "num": 39,
+    "audit": "SMETA",
+    "title": "Dangerous chemical waste handling contract/transport records",
+    "description": "Contrat de collecteur déchet dangereux",
+    "owner": "HSE/SP",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-16",
+    "requirements": [
+      "Contrat de collecteur déchet dangereux"
+    ],
+    "comments": []
+  },
+  {
+    "id": 140,
+    "num": 40,
+    "audit": "SMETA",
+    "title": "Qualified certificate for the keeper of dangerous chemicals warehouse",
+    "description": "Qualification de magasinier du magasin produit chimique",
+    "owner": "SP",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-16",
+    "requirements": [
+      "Qualification de magasinier du magasin produit chimique"
+    ],
+    "comments": []
+  },
+  {
+    "id": 141,
+    "num": 41,
+    "audit": "SMETA",
+    "title": "The hazardous elements (air quality and noise etc.) evaluation report for Workplace Agreements (CBA)",
+    "description": "Control de qualité d'air et bruit",
+    "owner": "Hammadi",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-16",
+    "requirements": [
+      "Control de qualité d'air et bruit"
+    ],
+    "comments": []
+  },
+  {
+    "id": 142,
+    "num": 42,
+    "audit": "SMETA",
+    "title": "Employees’ occupational health examination reports/certificates",
+    "description": "Certifiat d'aptitude",
+    "owner": "HR/N",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-16",
+    "requirements": [
+      "Certifiat d'aptitude"
+    ],
+    "comments": []
+  },
+  {
+    "id": 143,
+    "num": 43,
+    "audit": "SMETA",
+    "title": "Meeting minutes of union/Selection program and Responsibility of workers’ Rep./ Collective Bargaining",
+    "description": "NA",
+    "owner": "NA",
+    "department": "?",
+    "status": 0,
+    "applicable": false,
+    "due": "2026-10-16",
+    "requirements": [
+      "NA"
+    ],
+    "comments": []
+  },
+  {
+    "id": 144,
+    "num": 44,
+    "audit": "SMETA",
+    "title": "Documents proved workers' legal right to work including immigrant & migrants & employment agency staff, if applicable",
+    "description": "01 – Registre du personnel\r\n02 – Registre des travailleurs étrangers/migrants — si applicable\r\n03 – Registre du personnel d’agence — si applicable\r\n04 – Registre de vérification du droit au travail\r\n05 – Contrats de travail\r\n06 – Autorisations de travail / titres de séjour — si applicable\r\n07 – Contrat avec l’agence — si applicable\r\n08 – Suivi des dates d’expiration",
+    "owner": "HR/G et N",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-16",
+    "requirements": [
+      "01 – Registre du personnel",
+      "02 – Registre des travailleurs étrangers/migrants — si applicable",
+      "03 – Registre du personnel d’agence — si applicable",
+      "04 – Registre de vérification du droit au travail",
+      "05 – Contrats de travail",
+      "06 – Autorisations de travail / titres de séjour — si applicable",
+      "07 – Contrat avec l’agence — si applicable",
+      "08 – Suivi des dates d’expiration"
+    ],
+    "comments": []
+  },
+  {
+    "id": 145,
+    "num": 45,
+    "audit": "SMETA",
+    "title": "Social accountability policy/ Management system/ periodic internal audit records",
+    "description": "Politique responsabilité social/procédure d'analyse de risque HSE(RSE)/plan d'audit",
+    "owner": "QMS",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-16",
+    "requirements": [
+      "Politique responsabilité social/procédure d'analyse de risque HSE(RSE)/plan d'audit"
+    ],
+    "comments": []
+  },
+  {
+    "id": 146,
+    "num": 46,
+    "audit": "SMETA",
+    "title": "Subcontractors list/ monitoring records on sub-contractors' social responsibilities performance",
+    "description": "01 – Subcontractor Master List\r\n02 – Subcontractor Evaluation\r\n03 – Supplier/Subcontractor Code of Conduct\r\n04 – Contracts / Agreements",
+    "owner": "SP",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-16",
+    "requirements": [
+      "01 – Subcontractor Master List",
+      "02 – Subcontractor Evaluation",
+      "03 – Supplier/Subcontractor Code of Conduct",
+      "04 – Contracts / Agreements"
+    ],
+    "comments": []
+  },
+  {
+    "id": 147,
+    "num": 47,
+    "audit": "SMETA",
+    "title": "Homeworkers' name list/ monitoring records on homeworkers proved to be compliant with social responsibilities, if applicable",
+    "description": "NA",
+    "owner": "NA",
+    "department": "?",
+    "status": 0,
+    "applicable": false,
+    "due": "2026-10-16",
+    "requirements": [
+      "NA"
+    ],
+    "comments": []
+  },
+  {
+    "id": 148,
+    "num": 48,
+    "audit": "SMETA",
+    "title": "Environment evaluation report",
+    "description": "Analyse d'impact environnementaux",
+    "owner": "HSE",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-16",
+    "requirements": [
+      "Analyse d'impact environnementaux"
+    ],
+    "comments": []
+  },
+  {
+    "id": 149,
+    "num": 49,
+    "audit": "SMETA",
+    "title": "Emergency action procedures",
+    "description": "02 – Fire Evacuation Plan – MYC\r\n03 – Annual Fire Drill Program 2026\r\nRapports des exercices d'évacuation/incendie\r\nPhotos des exercices\r\nListe des contacts d'urgence\r\nPlan avec sorties de secours + point de rassemblement\r\nRegistre des personnes formées aux premiers secours\r\nProcédure de gestion des accidents/incidents\r\nProcédure de gestion des produits chimiques / déversement\r\nFDS des produits chimiques\r\nRegistre des équipements incendie\r\nListe des responsables d'urgence",
+    "owner": "HSE",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-16",
+    "requirements": [
+      "02 – Fire Evacuation Plan – MYC",
+      "03 – Annual Fire Drill Program 2026",
+      "Rapports des exercices d'évacuation/incendie",
+      "Photos des exercices",
+      "Liste des contacts d'urgence",
+      "Plan avec sorties de secours + point de rassemblement",
+      "Registre des personnes formées aux premiers secours",
+      "Procédure de gestion des accidents/incidents",
+      "Procédure de gestion des produits chimiques / déversement",
+      "FDS des produits chimiques",
+      "Registre des équipements incendie",
+      "Liste des responsables d'urgence"
+    ],
+    "comments": []
+  },
+  {
+    "id": 150,
+    "num": 50,
+    "audit": "SMETA",
+    "title": "Environmental System Policy/ Procedure",
+    "description": "01 – Système de management environnemental\r\n        01 – Politique environnementale\r\n         02 – Procédure du système environnemental\r\n         03 – Matrice des aspects et impacts environnementaux\r\n         04 – Registre des exigences légales environnementales\r\n         05 – Évaluation de conformité réglementaire\r\n         06 – Procédure de gestion des déchets\r\n        07 – Gestion des produits chimiques\r\n        08 – Suivi de la consommation d'eau\r\n        09 – Suivi de la consommation d'énergie\r\n        10 – Gestion des situations d'urgence environnementale\r\n        11 – Objectifs & programme environnemental\r\n         12 – Formations / sensibilisation environnementale\r\n         13 – Indicateurs environnementaux\r\n         14 – Audits & actions correctives",
+    "owner": "RH",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-16",
+    "requirements": [
+      "01 – Système de management environnemental",
+      "01 – Politique environnementale",
+      "02 – Procédure du système environnemental",
+      "03 – Matrice des aspects et impacts environnementaux",
+      "04 – Registre des exigences légales environnementales",
+      "05 – Évaluation de conformité réglementaire",
+      "06 – Procédure de gestion des déchets",
+      "07 – Gestion des produits chimiques",
+      "08 – Suivi de la consommation d'eau",
+      "09 – Suivi de la consommation d'énergie",
+      "10 – Gestion des situations d'urgence environnementale",
+      "11 – Objectifs & programme environnemental",
+      "12 – Formations / sensibilisation environnementale",
+      "13 – Indicateurs environnementaux",
+      "14 – Audits & actions correctives"
+    ],
+    "comments": []
+  },
+  {
+    "id": 151,
+    "num": 51,
+    "audit": "SMETA",
+    "title": "Business Integrity Policy/Procedure (if 4-Pillar)",
+    "description": "02 – Business Integrity\r\n         01 – Business Integrity Policy\r\n         02 – Business Integrity Procedure\r\n        03 – Code of Conduct\r\n        04 – Conflict of Interest Declaration\r\n         05 – Gifts & Hospitality Register\r\n         06 – Business Integrity Training Records\r\n        07 – Whistleblowing / Reporting Procedure\r\n        08 – Business Integrity Incident Register\r\n         09 – Investigation & Corrective Action Records\r\n        10 – Management Review / Periodic Review",
+    "owner": "RH",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-16",
+    "requirements": [
+      "02 – Business Integrity",
+      "01 – Business Integrity Policy",
+      "02 – Business Integrity Procedure",
+      "03 – Code of Conduct",
+      "04 – Conflict of Interest Declaration",
+      "05 – Gifts & Hospitality Register",
+      "06 – Business Integrity Training Records",
+      "07 – Whistleblowing / Reporting Procedure",
+      "08 – Business Integrity Incident Register",
+      "09 – Investigation & Corrective Action Records",
+      "10 – Management Review / Periodic Review"
+    ],
+    "comments": []
+  },
+  {
+    "id": 152,
+    "num": 52,
+    "audit": "SMETA",
+    "title": "Business Integrity Training Records/Investigation Reports (if 4-Pillar)",
+    "description": "Politique SMETA signé par tous les collaborateur et la direction",
+    "owner": "SP",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-16",
+    "requirements": [
+      "Politique SMETA signé par tous les collaborateur et la direction"
+    ],
+    "comments": []
+  },
+  {
+    "id": 153,
+    "num": 53,
+    "audit": "SMETA",
+    "title": "Agreement on Business Integrity with Suppliers (if 4-Pillar)",
+    "description": "Politique achat signé par les fournisseur et la direction",
+    "owner": "SP",
+    "department": "?",
+    "status": 0,
+    "applicable": true,
+    "due": "2026-10-16",
+    "requirements": [
+      "Politique achat signé par les fournisseur et la direction"
+    ],
+    "comments": []
+  }
+]
