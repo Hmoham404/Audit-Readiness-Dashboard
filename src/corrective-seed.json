@@ -1,0 +1,504 @@
+{
+  "GMP": {
+    "points": [
+      {
+        "id": 1,
+        "num": 1,
+        "audit": "GMP",
+        "title": "NC 1 · 3.3.1 (Responsabilités de la direction)",
+        "description": "Set up a GMP plan with an action for \r\neach objective and a deadline; review \r\nprogress monthly.",
+        "owner": "Naoures",
+        "department": "QHSE",
+        "status": 0,
+        "applicable": true,
+        "due": "2026-11-20",
+        "requirements": [
+          "Set up a GMP plan with an action for",
+          "each objective and a deadline; review",
+          "progress monthly."
+        ],
+        "comments": [],
+        "details": {
+          "facts": "No documented GMP plan with defined \r\nactions and deadlines was available to reach \r\nthe quality objectives. \r\n\r\nAucun plan GMP documenté avec définition \r\nles actions et les délais étaient disponibles pour atteindre \r\nles objectifs de qualité.",
+          "reference": "3.3.1 (Responsabilités de la direction)",
+          "ncType": "Mineure",
+          "departmentOwner": "Naoures",
+          "causes": "",
+          "correction": "",
+          "correctiveAction": "Set up a GMP plan with an action for \r\neach objective and a deadline; review \r\nprogress monthly.",
+          "verificationDate": "2026-11-14",
+          "verification": "",
+          "observations": "",
+          "sourceFile": "MYCTN-FM-QM-007 V0 Rapport de Non-Conformité et d'Action Corrective-audit 19-10-2026 GMP.xlsx",
+          "sourceSheet": "Registre NC",
+          "sourceRow": 8
+        }
+      },
+      {
+        "id": 2,
+        "num": 2,
+        "audit": "GMP",
+        "title": "NC 2 · 3.5.1 (Responsabilités de la direction et hygiène du personnel)",
+        "description": "Update the management review \r\nprocedure and agenda to cover the full \r\nGMP performance, including hygiene; \r\nhold a supplementary review.",
+        "owner": "Sami \r\nNaoures",
+        "department": "DG\r\nQHSE",
+        "status": 0,
+        "applicable": true,
+        "due": "2026-11-20",
+        "requirements": [
+          "Update the management review",
+          "procedure and agenda to cover the full",
+          "GMP performance, including hygiene;",
+          "hold a supplementary review."
+        ],
+        "comments": [],
+        "details": {
+          "facts": "Management review was done, but GMP \r\nperformance was not fully covered; hygiene \r\ntopics were not reviewed.\r\n\r\nLa revue de direction a été effectué, mais les BPF \r\nla performance n’a pas été entièrement couverte ; hygiène \r\nles sujets n’ont pas été examinés.",
+          "reference": "3.5.1 (Responsabilités de la direction et hygiène du personnel)",
+          "ncType": "",
+          "departmentOwner": "Sami \r\nNaoures",
+          "causes": "",
+          "correction": "",
+          "correctiveAction": "Update the management review \r\nprocedure and agenda to cover the full \r\nGMP performance, including hygiene; \r\nhold a supplementary review.",
+          "verificationDate": "2026-11-14",
+          "verification": "",
+          "observations": "",
+          "sourceFile": "MYCTN-FM-QM-007 V0 Rapport de Non-Conformité et d'Action Corrective-audit 19-10-2026 GMP.xlsx",
+          "sourceSheet": "Registre NC",
+          "sourceRow": 9
+        }
+      },
+      {
+        "id": 3,
+        "num": 3,
+        "audit": "GMP",
+        "title": "NC 3 · 3.4.2.5 et 3.4.4 (Formation continue et évaluation de la formation)",
+        "description": "Set up a skills assessment (tests or \r\non-the-job evaluation) after each \r\ntraining; define the re-training triggers \r\nand a yearly re-assessment; keep \r\nrecords.",
+        "owner": "Ghassen\r\nNaoures",
+        "department": "RH",
+        "status": 0,
+        "applicable": true,
+        "due": "2026-12-20",
+        "requirements": [
+          "Set up a skills assessment (tests or",
+          "on-the-job evaluation) after each",
+          "training; define the re-training triggers",
+          "and a yearly re-assessment; keep",
+          "records."
+        ],
+        "comments": [],
+        "details": {
+          "facts": "No regular assessment of workers’ skills \r\nprocess is in place; training effectiveness is \r\nnot evaluated. \r\n\r\nNo regular assessment of workers’ skills \r\nprocess is in place; training effectiveness is \r\nnot evaluated.",
+          "reference": "3.4.2.5 et 3.4.4 (Formation continue et évaluation de la formation)",
+          "ncType": "Mineure",
+          "departmentOwner": "Ghassen\r\nNaoures",
+          "causes": "",
+          "correction": "",
+          "correctiveAction": "Set up a skills assessment (tests or \r\non-the-job evaluation) after each \r\ntraining; define the re-training triggers \r\nand a yearly re-assessment; keep \r\nrecords.",
+          "verificationDate": "2026-11-14",
+          "verification": "",
+          "observations": "",
+          "sourceFile": "MYCTN-FM-QM-007 V0 Rapport de Non-Conformité et d'Action Corrective-audit 19-10-2026 GMP.xlsx",
+          "sourceSheet": "Registre NC",
+          "sourceRow": 10
+        }
+      },
+      {
+        "id": 4,
+        "num": 4,
+        "audit": "GMP",
+        "title": "NC 4 · 6.6.1 et 6.6.2 (Stockage des matières premières et articles de conditionnement)",
+        "description": "Put all incoming materials on pallets \r\nor racks, away from the walls;",
+        "owner": "Faten",
+        "department": "Supply chain",
+        "status": 0,
+        "applicable": true,
+        "due": "2026-10-27",
+        "requirements": [
+          "Put all incoming materials on pallets",
+          "or racks, away from the walls;"
+        ],
+        "comments": [],
+        "details": {
+          "facts": "Some incoming materials in the building n°2 \r\nwarehouse were not stored at a proper \r\ndistance from the walls. \r\n\r\nSome incoming materials in the building n°2 \r\nwarehouse were not stored at a proper \r\ndistance from the walls.",
+          "reference": "6.6.1 et 6.6.2 (Stockage des matières premières et articles de conditionnement)",
+          "ncType": "Mineure",
+          "departmentOwner": "Faten",
+          "causes": "",
+          "correction": "Put all incoming materials on pallets \r\nor racks, away from the walls;",
+          "correctiveAction": "",
+          "verificationDate": "2026-11-14",
+          "verification": "",
+          "observations": "",
+          "sourceFile": "MYCTN-FM-QM-007 V0 Rapport de Non-Conformité et d'Action Corrective-audit 19-10-2026 GMP.xlsx",
+          "sourceSheet": "Registre NC",
+          "sourceRow": 11
+        }
+      },
+      {
+        "id": 5,
+        "num": 5,
+        "audit": "GMP",
+        "title": "NC 5 · 4.10 et 4.13 (Nettoyage et lutte contre les nuisibles)",
+        "description": "Extend the GMP risk assessment to all \r\nGMP topics, in line with the actions for \r\n7.4 and 7.14.",
+        "owner": "Naoures",
+        "department": "QHSE",
+        "status": 0,
+        "applicable": true,
+        "due": "2026-11-20",
+        "requirements": [
+          "Extend the GMP risk assessment to all",
+          "GMP topics, in line with the actions for",
+          "7.4 and 7.14."
+        ],
+        "comments": [],
+        "details": {
+          "facts": "A GMP risk assessment exists but does not \r\ncover all GMP topics (external risks, pest \r\ncontrol and cleaning not included).\r\n\r\n\r\n\r\nA GMP risk assessment exists but does not \r\ncover all GMP topics (external risks, pest \r\ncontrol and cleaning not included).",
+          "reference": "4.10 et 4.13 (Nettoyage et lutte contre les nuisibles)",
+          "ncType": "Mineure",
+          "departmentOwner": "Naoures",
+          "causes": "",
+          "correction": "",
+          "correctiveAction": "Extend the GMP risk assessment to all \r\nGMP topics, in line with the actions for \r\n7.4 and 7.14.",
+          "verificationDate": "2026-11-14",
+          "verification": "",
+          "observations": "",
+          "sourceFile": "MYCTN-FM-QM-007 V0 Rapport de Non-Conformité et d'Action Corrective-audit 19-10-2026 GMP.xlsx",
+          "sourceSheet": "Registre NC",
+          "sourceRow": 12
+        }
+      },
+      {
+        "id": 6,
+        "num": 6,
+        "audit": "GMP",
+        "title": "NC 6 · 6.2 et 6.3 (Achats et réception des matières premières/articles de conditionnement)",
+        "description": "Add external risks (suppliers, utilities, \r\ntransport, environment) to the risk \r\nassessment, with mitigation actions.",
+        "owner": "Naoures",
+        "department": "QHSE",
+        "status": 0,
+        "applicable": true,
+        "due": "2026-11-20",
+        "requirements": [
+          "Add external risks (suppliers, utilities,",
+          "transport, environment) to the risk",
+          "assessment, with mitigation actions."
+        ],
+        "comments": [],
+        "details": {
+          "facts": "The risk assessment covers internal risks \r\nonly; external risks (suppliers, utilities, \r\ntransport, environment) are not included. \r\n\r\n\r\nThe risk assessment covers internal risks \r\nonly; external risks (suppliers, utilities, \r\ntransport, environment) are not included.",
+          "reference": "6.2 et 6.3 (Achats et réception des matières premières/articles de conditionnement)",
+          "ncType": "Mineure",
+          "departmentOwner": "Naoures",
+          "causes": "",
+          "correction": "",
+          "correctiveAction": "Add external risks (suppliers, utilities, \r\ntransport, environment) to the risk \r\nassessment, with mitigation actions.",
+          "verificationDate": "2026-11-14",
+          "verification": "",
+          "observations": "",
+          "sourceFile": "MYCTN-FM-QM-007 V0 Rapport de Non-Conformité et d'Action Corrective-audit 19-10-2026 GMP.xlsx",
+          "sourceSheet": "Registre NC",
+          "sourceRow": 13
+        }
+      },
+      {
+        "id": 7,
+        "num": 7,
+        "audit": "GMP",
+        "title": "NC 7 · 4.10 et 4.13 (Nettoyage et lutte contre les nuisibles)",
+        "description": "Add pest control and cleaning \r\noperations to the risk assessment, \r\nwith risk scores and control \r\nmeasures.",
+        "owner": "Naoures",
+        "department": "QHSE",
+        "status": 0,
+        "applicable": true,
+        "due": "2026-11-20",
+        "requirements": [
+          "Add pest control and cleaning",
+          "operations to the risk assessment,",
+          "with risk scores and control",
+          "measures."
+        ],
+        "comments": [],
+        "details": {
+          "facts": "Pest control and cleaning operations are not \r\nincluded in the GMP risk assessment. \r\n\r\nPest control and cleaning operations are not \r\nincluded in the GMP risk assessment.",
+          "reference": "4.10 et 4.13 (Nettoyage et lutte contre les nuisibles)",
+          "ncType": "Mineure",
+          "departmentOwner": "Naoures",
+          "causes": "",
+          "correction": "",
+          "correctiveAction": "Add pest control and cleaning \r\noperations to the risk assessment, \r\nwith risk scores and control \r\nmeasures.",
+          "verificationDate": "2026-11-14",
+          "verification": "",
+          "observations": "",
+          "sourceFile": "MYCTN-FM-QM-007 V0 Rapport de Non-Conformité et d'Action Corrective-audit 19-10-2026 GMP.xlsx",
+          "sourceSheet": "Registre NC",
+          "sourceRow": 14
+        }
+      },
+      {
+        "id": 8,
+        "num": 8,
+        "audit": "GMP",
+        "title": "NC 8 · 7.3 et 17 (Opérations de conditionnement et documentation)",
+        "description": "Revise the packing record forms to \r\nshow each operator’s name and \r\nsignature;",
+        "owner": "Walid",
+        "department": "Production",
+        "status": 0,
+        "applicable": true,
+        "due": "2027-01-20",
+        "requirements": [
+          "Revise the packing record forms to",
+          "show each operator’s name and",
+          "signature;"
+        ],
+        "comments": [],
+        "details": {
+          "facts": "Packing records do not clearly identify the \r\noperators (no names on the records \r\nreviewed).\r\n\r\nPacking records do not clearly identify the \r\noperators (no names on the records \r\nreviewed).",
+          "reference": "7.3 et 17 (Opérations de conditionnement et documentation)",
+          "ncType": "Mineure",
+          "departmentOwner": "Walid",
+          "causes": "",
+          "correction": "",
+          "correctiveAction": "Revise the packing record forms to \r\nshow each operator’s name and \r\nsignature;",
+          "verificationDate": "2026-11-14",
+          "verification": "",
+          "observations": "",
+          "sourceFile": "MYCTN-FM-QM-007 V0 Rapport de Non-Conformité et d'Action Corrective-audit 19-10-2026 GMP.xlsx",
+          "sourceSheet": "Registre NC",
+          "sourceRow": 15
+        }
+      }
+    ],
+    "warnings": [],
+    "sheet": "Registre NC",
+    "file": "MYCTN-FM-QM-007 V0 Rapport de Non-Conformité et d'Action Corrective-audit 19-10-2026 GMP.xlsx"
+  },
+  "SMETA": {
+    "points": [
+      {
+        "id": 100001,
+        "num": 1,
+        "audit": "SMETA",
+        "title": "NC 1 · 1.26 Are there fire/evacuation procedures in place with relevant \r\nevacuation plans posted in every workshop?",
+        "description": "Mise à jour de plan d'évacuation et le rendre plus simple  \r\nAffichage de plan d'évaciation dans tous les ateliers \r\nCéation des fléches plastifié",
+        "owner": "Saif",
+        "department": "QHSE",
+        "status": 1,
+        "applicable": true,
+        "due": "2026-10-16",
+        "requirements": [
+          "Mise à jour de plan d'évacuation et le rendre plus simple",
+          "Affichage de plan d'évaciation dans tous les ateliers",
+          "Céation des fléches plastifié"
+        ],
+        "comments": [],
+        "details": {
+          "facts": "The evacuation plan needs to be reviewed, and the evacuation direction must be marked on the floor to \r\nfacilitate the evacuation and the finding of the nearest evacuation exit. / Le plan d’évacuation doit être revu, et \r\nle sens d’évacuation doit être marqué au sol afin de faciliter l’évacuation et la localisation de la sortie de secours \r\nla plus proche.\r\nEN: It’s recommended to review the evacuation plan and mark the \r\nevacuation direction on the floor.\r\nFR: Il est recommandé de revoir le plan d’évacuation et de marquer le \r\nsens d’évacuation au sol.",
+          "reference": "1.26 Are there fire/evacuation procedures in place with relevant \r\nevacuation plans posted in every workshop?",
+          "ncType": "Mineure",
+          "departmentOwner": "Naoures Zaag",
+          "causes": "",
+          "correction": "",
+          "correctiveAction": "Mise à jour de plan d'évacuation et le rendre plus simple  \r\nAffichage de plan d'évaciation dans tous les ateliers \r\nCéation des fléches plastifié",
+          "verificationDate": "",
+          "verification": "",
+          "observations": "",
+          "sourceFile": "MYCTN-FM-QM-007 V0 Rapport de Non-Conformité et d'Action Corrective-audit 08-09-10-2026.xlsx",
+          "sourceSheet": "Registre NC",
+          "sourceRow": 8
+        }
+      },
+      {
+        "id": 100002,
+        "num": 2,
+        "audit": "SMETA",
+        "title": "NC 2 · 1.28 Does the factory have appropriate maintenance/inspections for \r\nboilers, elevators, pressure vessels and other equipment per local \r\nregulation?",
+        "description": "Validation des offre\r\nValidation de contrat WTI et vérification de la disponibilité de labo de contrôle avant la date d'audit GMP(19/10/2026)",
+        "owner": "Hammadi",
+        "department": "Technical departement",
+        "status": 0,
+        "applicable": true,
+        "due": "2026-11-30",
+        "requirements": [
+          "Validation des offre",
+          "Validation de contrat WTI et vérification de la disponibilité de labo de contrôle avant la date d'audit GMP(19/10/2026)"
+        ],
+        "comments": [],
+        "details": {
+          "facts": "The compressed air vessel has not yet been inspected as required by the legal requirement. / Le réservoir d’air \r\ncomprimé n’a pas encore été inspecté conformément à l’exigence légale. \r\n EN: Ensure the compressed air vessel is inspected as required by law.\r\nFR: S’assurer que le réservoir d’air comprimé soit inspecté conformément \r\nà la loi.",
+          "reference": "1.28 Does the factory have appropriate maintenance/inspections for \r\nboilers, elevators, pressure vessels and other equipment per local \r\nregulation?",
+          "ncType": "Mineure",
+          "departmentOwner": "Hammadi Gargouch",
+          "causes": "",
+          "correction": "",
+          "correctiveAction": "Validation des offre\r\nValidation de contrat WTI et vérification de la disponibilité de labo de contrôle avant la date d'audit GMP(19/10/2026)",
+          "verificationDate": "",
+          "verification": "",
+          "observations": "",
+          "sourceFile": "MYCTN-FM-QM-007 V0 Rapport de Non-Conformité et d'Action Corrective-audit 08-09-10-2026.xlsx",
+          "sourceSheet": "Registre NC",
+          "sourceRow": 9
+        }
+      },
+      {
+        "id": 100003,
+        "num": 3,
+        "audit": "SMETA",
+        "title": "NC 3 · 1.31 Are all electrical wires in the facility adequately protected?",
+        "description": "Validations de contrat et date díntervention de Med control",
+        "owner": "Hammadi",
+        "department": "Technical departement",
+        "status": 0,
+        "applicable": true,
+        "due": "2026-11-13",
+        "requirements": [
+          "Validations de contrat et date díntervention de Med control"
+        ],
+        "comments": [],
+        "details": {
+          "facts": "The electrical installation was inspected in March 2026; however, it is mandatory to inspect it every 6 months \r\naccording to the legal requirement. The new inspection has not yet been completed. / L’installation électrique a \r\nété inspectée en mars 2026 ; cependant, son inspection est obligatoire tous les 6 mois selon l’exigence légale. La \r\nnouvelle inspection n’est pas encore réalisée.\r\nEN: Ensure the electrical installation inspection is completed and then \r\nconducted every 6 months as required by law.\r\nFR: S’assurer que l’inspection de l’installation électrique soit réalisée, puis \r\neffectuée tous les 6 mois conformément à la loi.",
+          "reference": "1.31 Are all electrical wires in the facility adequately protected?",
+          "ncType": "Mineure",
+          "departmentOwner": "Hammadi Gargouch",
+          "causes": "",
+          "correction": "",
+          "correctiveAction": "Validations de contrat et date díntervention de Med control",
+          "verificationDate": "",
+          "verification": "",
+          "observations": "",
+          "sourceFile": "MYCTN-FM-QM-007 V0 Rapport de Non-Conformité et d'Action Corrective-audit 08-09-10-2026.xlsx",
+          "sourceSheet": "Registre NC",
+          "sourceRow": 10
+        }
+      },
+      {
+        "id": 100004,
+        "num": 4,
+        "audit": "SMETA",
+        "title": "NC 4 · 1.33 Do operators of machinery get training about safety regulations and \r\noperating procedures?",
+        "description": "Fixation de la date de formation ce vendredi le 16/10/2026 avec Saber Boughamoura",
+        "owner": "Naoures Ayeb",
+        "department": "RH",
+        "status": 0,
+        "applicable": true,
+        "due": "2026-11-15",
+        "requirements": [
+          "Fixation de la date de formation ce vendredi le 16/10/2026 avec Saber Boughamoura"
+        ],
+        "comments": [],
+        "details": {
+          "facts": "The records of the habilitation training were not provided during the audit day. / Les registres de la formation \r\nd’habilitation n’ont pas été fournis le jour de l’audit.\r\nEN: Ensure the habilitation training records are available and provided.\r\nFR: S’assurer que les registres de la formation d’habilitation soient \r\ndisponibles et fournis.",
+          "reference": "1.33 Do operators of machinery get training about safety regulations and \r\noperating procedures?",
+          "ncType": "Mineure",
+          "departmentOwner": "Naoures Ayeb",
+          "causes": "",
+          "correction": "",
+          "correctiveAction": "Fixation de la date de formation ce vendredi le 16/10/2026 avec Saber Boughamoura",
+          "verificationDate": "",
+          "verification": "",
+          "observations": "",
+          "sourceFile": "MYCTN-FM-QM-007 V0 Rapport de Non-Conformité et d'Action Corrective-audit 08-09-10-2026.xlsx",
+          "sourceSheet": "Registre NC",
+          "sourceRow": 11
+        }
+      },
+      {
+        "id": 100005,
+        "num": 5,
+        "audit": "SMETA",
+        "title": "NC 5 · 1.38 Are the designated employees properly trained for the handling of \r\nthese hazardous materials?",
+        "description": "Fixation de la date de formation ce vendredi le 16/10/2026 avec Saber Boughamoura",
+        "owner": "Naoures Ayeb",
+        "department": "RH",
+        "status": 0,
+        "applicable": true,
+        "due": "2026-11-15",
+        "requirements": [
+          "Fixation de la date de formation ce vendredi le 16/10/2026 avec Saber Boughamoura"
+        ],
+        "comments": [],
+        "details": {
+          "facts": "The chemical handling training has not yet been provided to workers. According to management, it is planned \r\nfor November 2026. / La formation à la manipulation des produits chimiques n’a pas encore été dispensée aux \r\ntravailleurs. Selon la direction, elle est prévue pour novembre 2026.\r\nEN: Ensure chemical handling training is provided to all workers as \r\nplanned.\r\nFR: S’assurer que la formation à la manipulation des produits chimiques \r\nsoit dispensée à tous les travailleurs comme prévu.",
+          "reference": "1.38 Are the designated employees properly trained for the handling of \r\nthese hazardous materials?",
+          "ncType": "Mineure",
+          "departmentOwner": "Naoures Ayeb",
+          "causes": "",
+          "correction": "",
+          "correctiveAction": "Fixation de la date de formation ce vendredi le 16/10/2026 avec Saber Boughamoura",
+          "verificationDate": "",
+          "verification": "",
+          "observations": "",
+          "sourceFile": "MYCTN-FM-QM-007 V0 Rapport de Non-Conformité et d'Action Corrective-audit 08-09-10-2026.xlsx",
+          "sourceSheet": "Registre NC",
+          "sourceRow": 12
+        }
+      },
+      {
+        "id": 100006,
+        "num": 6,
+        "audit": "SMETA",
+        "title": "NC 6 · 3.1 Have  the workers signed a written employment contract?",
+        "description": "Validation de contrat en arabe de point de vue juridique\r\nCommuniquer un avenant au contrat à l’ensemble des collaborateurs.",
+        "owner": "Ghassen",
+        "department": "HR",
+        "status": 1,
+        "applicable": true,
+        "due": "2026-12-30",
+        "requirements": [
+          "Validation de contrat en arabe de point de vue juridique",
+          "Communiquer un avenant au contrat à l’ensemble des collaborateurs."
+        ],
+        "comments": [],
+        "details": {
+          "facts": "The company provided contracts to workers, and the contracts were signed and approved by the legal authority; \r\nhowever, the contracts were in French. According to management, the contracts are explained to workers \r\nbefore being signed, and they are working on providing new contracts in the local language. / L’entreprise a \r\nremis des contrats aux travailleurs, et les contrats ont été signés et approuvés par l’autorité légale ; cependant, \r\nles contrats étaient rédigés en français. Selon la direction, les contrats sont expliqués aux travailleurs avant \r\nd’être signés, et l’entreprise travaille à fournir de nouveaux contrats dans la langue locale.\r\nEN: Ensure contracts are provided to workers in the local language.\r\nFR: S’assurer que les contrats soient remis aux travailleurs dans la langue \r\nlocale.",
+          "reference": "3.1 Have  the workers signed a written employment contract?",
+          "ncType": "Mineure",
+          "departmentOwner": "Ghassen",
+          "causes": "",
+          "correction": "",
+          "correctiveAction": "Validation de contrat en arabe de point de vue juridique\r\nCommuniquer un avenant au contrat à l’ensemble des collaborateurs.",
+          "verificationDate": "",
+          "verification": "",
+          "observations": "",
+          "sourceFile": "MYCTN-FM-QM-007 V0 Rapport de Non-Conformité et d'Action Corrective-audit 08-09-10-2026.xlsx",
+          "sourceSheet": "Registre NC",
+          "sourceRow": 13
+        }
+      },
+      {
+        "id": 100007,
+        "num": 7,
+        "audit": "SMETA",
+        "title": "NC 7 · 2.2E Can factory demonstrate that energy use is monitored and \r\nmeasured? Are GHG emissions calculated, including fuel for on-site \r\ntransportations?",
+        "description": "Ajouter la formule de calcule GES au TB.HSE",
+        "owner": "Naoures Zaag",
+        "department": "HR",
+        "status": 0,
+        "applicable": true,
+        "due": "2027-03-01",
+        "requirements": [
+          "Ajouter la formule de calcule GES au TB.HSE"
+        ],
+        "comments": [],
+        "details": {
+          "facts": "The GHG emissions are not calculated. / Les émissions de GES ne sont pas calculées\r\nEN: It’s recommended to calculate the company’s GHG emissions.\r\nFR: Il est recommandé de calculer les émissions de GES de l’entreprise.",
+          "reference": "2.2E Can factory demonstrate that energy use is monitored and \r\nmeasured? Are GHG emissions calculated, including fuel for on-site \r\ntransportations?",
+          "ncType": "OFI",
+          "departmentOwner": "Naoures Zaag",
+          "causes": "",
+          "correction": "",
+          "correctiveAction": "Ajouter la formule de calcule GES au TB.HSE",
+          "verificationDate": "",
+          "verification": "",
+          "observations": "",
+          "sourceFile": "MYCTN-FM-QM-007 V0 Rapport de Non-Conformité et d'Action Corrective-audit 08-09-10-2026.xlsx",
+          "sourceSheet": "Registre NC",
+          "sourceRow": 14
+        }
+      }
+    ],
+    "warnings": [],
+    "sheet": "Registre NC",
+    "file": "MYCTN-FM-QM-007 V0 Rapport de Non-Conformité et d'Action Corrective-audit 08-09-10-2026.xlsx"
+  }
+}

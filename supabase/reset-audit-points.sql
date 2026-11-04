@@ -5,6 +5,5 @@ begin;
 delete from public.audit_points;
 commit;
 
--- Après exécution, ouvrez/rechargez l'application avec Supabase configuré.
--- Elle détecte la table vide et réinsère automatiquement les points de départ
--- GMP et SMETA définis dans src/data.ts.
+-- L'application respecte désormais une table vide et ne réinsère pas les points.
+-- Pour un suivi indépendant, utiliser « Nouveau projet » sans exécuter ce script.

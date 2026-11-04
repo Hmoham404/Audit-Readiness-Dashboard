@@ -14,6 +14,21 @@ export type Point = {
   due: string;
   requirements: string[];
   comments: string[];
+  details?: {
+    facts: string;
+    reference: string;
+    ncType: string;
+    departmentOwner: string;
+    causes: string;
+    correction: string;
+    correctiveAction: string;
+    verificationDate: string;
+    verification: string;
+    observations: string;
+    sourceFile: string;
+    sourceSheet: string;
+    sourceRow: number;
+  };
 };
 
 export const initialPoints = seedData as Point[];

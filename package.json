@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "vite --host 0.0.0.0",
     "build": "tsc -b && vite build",
+    "test": "node --test tests/projects.test.mjs",
+    "import:corrective": "node scripts/import-corrective.mjs",
     "preview": "vite preview --host 0.0.0.0"
   },
   "dependencies": {
@@ -13,13 +15,17 @@
     "lucide-react": "^0.468.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "read-excel-file": "^9.3.14",
     "recharts": "^2.15.1"
   },
   "devDependencies": {
+    "@electric-sql/pglite": "^0.5.15",
     "@types/react": "^18.3.18",
     "@types/react-dom": "^18.3.5",
     "@vitejs/plugin-react": "^4.3.4",
     "autoprefixer": "^10.6.1",
+    "esbuild": "^0.28.2",
+    "jsdom": "^29.1.1",
     "postcss": "^8.5.29",
     "tailwindcss": "^3.4.19",
     "typescript": "~5.6.2",
