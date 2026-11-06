@@ -18,11 +18,11 @@ dom.window.HTMLDialogElement.prototype.showModal = function() { this.setAttribut
 dom.window.HTMLDialogElement.prototype.close = function() { this.removeAttribute('open'); };
 const { createRoot } = await import('react-dom/client');
 await build({ entryPoints: ['tests/entry.ts'], outfile: 'node_modules/.tmp/audit-tests.mjs', bundle: true, platform: 'node', format: 'esm', packages: 'external', jsx: 'automatic', define: { 'import.meta.env': '{}' } });
-const { ProjectsApp, useProjects, initialProjects, LEGACY_ID, LEGACY_POINTS_KEY, LEGACY_DATES_KEY, PROJECTS_KEY, cloneChecklist, parseAuditRows, excelDate, projectRow } = await import('../node_modules/.tmp/audit-tests.mjs');
+const { ProjectsApp, useProjects, initialProjects, LEGACY_ID, LEGACY_POINTS_KEY, LEGACY_DATES_KEY, PROJECTS_KEY, cloneChecklist, parseAuditRows, excelDate, projectRow, migrateLocalDepartments, CORRECTIVE_ID, DepartmentProgress, LANGUAGE_KEY, translate } = await import('../node_modules/.tmp/audit-tests.mjs');
 const files = (await fs.readdir('.')).filter(f => f.startsWith('MYCTN') && f.endsWith('.xlsx'));
 const imports = {};
 for (const audit of ['GMP', 'SMETA']) {
-  const file = files.find(f => audit === 'GMP' ? f.includes('GMP') : !f.includes('GMP'));
+  const file = files.find(f => audit === 'GMP' ? f.endsWith('19-10-2026 GMP.xlsx') : f.endsWith('08-09-10-2026.xlsx'));
   imports[audit] = { file, result: parseAuditRows(await readSheet(file, { sheet: 'Registre NC' }), audit, file, 'Registre NC', '') };
 }
 const mount = async component => {
@@ -67,6 +67,87 @@ test('recognizes both existing checklist formats as well as the corrective regis
     assert.equal(result.points.length, audit === 'GMP' ? 54 : 53);
     assert.ok(result.points.every(p => p.audit === audit && p.title));
   }
+});
+
+test('revised departments migrate existing corrective records without reimporting user changes or other projects', async () => {
+  const points = structuredClone([...imports.GMP.result.points, ...imports.SMETA.result.points]);
+  points[1].owner = 'Responsable modifié';
+  points[1].status = 1;
+  points[1].due = '2027-02-01';
+  points[1].comments = ['Commentaire conservé'];
+  const original = { id: CORRECTIVE_ID, points };
+  const result = migrateLocalDepartments(original);
+  const updates = JSON.parse(await fs.readFile('src/corrective-departments.json', 'utf8'));
+  assert.equal(updates.length, 15);
+  assert.equal(result.points.filter((p, index) => p.department !== points[index].department).length, 4);
+  for (const audit of ['GMP', 'SMETA']) {
+    const file = updates.find(p => p.audit === audit).file;
+    const revised = parseAuditRows(await readSheet(file, { sheet: 'Registre NC' }), audit, file, 'Registre NC', '');
+    for (const point of revised.points) {
+      assert.equal(result.points.find(p => p.audit === audit && p.num === point.num).department, point.department);
+    }
+  }
+  assert.deepEqual(result.points.map(({ department, ...p }) => p), points.map(({ department, ...p }) => p));
+  assert.deepEqual(migrateLocalDepartments(result), result, 'Reload is idempotent');
+  assert.equal(migrateLocalDepartments({ id: 'another-project', points }).points, points);
+  const custom = { ...points[1], department: 'Département personnalisé' };
+  assert.equal(migrateLocalDepartments({ id: CORRECTIVE_ID, points: [custom] }).points[0], custom);
+  const replacement = { ...points[1], details: undefined };
+  assert.equal(migrateLocalDepartments({ id: CORRECTIVE_ID, points: [replacement] }).points[0], replacement);
+  localStorage.clear();
+  const project = { ...initialProjects(localStorage, false)[1], points };
+  localStorage.setItem(PROJECTS_KEY, JSON.stringify([project]));
+  assert.deepEqual(initialProjects(localStorage, false)[1].points, result.points);
+});
+
+test('shared department migration updates only the department and keeps remote statuses, dates and comments', async () => {
+  localStorage.clear();
+  const project = { ...initialProjects(localStorage, false)[1], points: structuredClone([...imports.GMP.result.points, ...imports.SMETA.result.points]) };
+  project.points[1].comments = ['Commentaire partagé'];
+  project.points[1].status = 1;
+  project.points[1].due = '2027-01-01';
+  const before = structuredClone(project.points);
+  const writes = [];
+  const client = {
+    from(table) {
+      const filters = {};
+      let change;
+      const query = {
+        select() { return query; }, order() { return query; }, abortSignal() { return query; },
+        update(value) { change = value; return query; },
+        eq(key, value) { filters[key] = value; return query; },
+        maybeSingle() { return query; },
+        then(resolve, reject) {
+          let data = [];
+          if (table === 'audit_projects') data = [{ ...projectRow(project), audit_project_points: structuredClone(project.points) }];
+          if (change) {
+            assert.equal(table, 'audit_project_points');
+            assert.deepEqual(Object.keys(change), ['department']);
+            assert.equal(filters.project_id, CORRECTIVE_ID);
+            const point = project.points.find(p => p.id === filters.id && p.department === filters.department);
+            assert.ok(point, 'Write compares the previous department');
+            writes.push({ ...change });
+            Object.assign(point, change);
+            data = { ...point, project_id: CORRECTIVE_ID };
+          }
+          return Promise.resolve({ data, error: null }).then(resolve, reject);
+        },
+      };
+      return query;
+    },
+    channel() { const channel = { on() { return channel; }, subscribe() { return channel; } }; return channel; },
+    removeChannel() { return Promise.resolve(); },
+  };
+  const view = await mountHook(client);
+  assert.equal(view.store.connectionError, '');
+  assert.equal(writes.length, 4);
+  const saved = view.store.projects.find(p => p.id === CORRECTIVE_ID);
+  assert.equal(saved.points.find(p => p.audit === 'GMP' && p.num === 2).department, 'DG');
+  assert.equal(saved.points.find(p => p.audit === 'SMETA' && p.num === 1).department, 'Technical departement');
+  assert.deepEqual(saved.points.map(({ department, ...p }) => p), before.map(({ department, ...p }) => p));
+  await act(async () => view.store.retry());
+  assert.equal(writes.length, 4, 'Retry does not repeat the migration');
+  await view.unmount();
 });
 
 test('reports unknown statuses and invalid/missing dates; rejects duplicates and unrelated sheets', () => {
@@ -218,6 +299,32 @@ test('missing legacy date table uses shared project metadata without hiding or r
   await view.unmount();
 });
 
+test('department circles exclude N/A from completion and handle departments with no applicable points', async () => {
+  const base = imports.GMP.result.points[0];
+  const points = [
+    { ...base, id: 1, department: 'Qualité', applicable: true, status: 1 },
+    { ...base, id: 2, department: 'Qualité', applicable: true, status: 0 },
+    { ...base, id: 3, department: 'Qualité', applicable: false, status: 1 },
+    { ...base, id: 4, department: 'RH', applicable: false, status: 0 },
+    { ...base, id: 5, department: '', applicable: true, status: 0 },
+  ];
+  let selected;
+  const view = await mount(React.createElement(DepartmentProgress, { points, selected: 'Tous', onSelect: value => { selected = value; } }));
+  const cards = [...view.container.querySelectorAll('.department-progress-card')];
+  assert.equal(cards.length, 3);
+  const quality = cards.find(card => card.querySelector('h3').textContent === 'Qualité');
+  assert.equal(quality.querySelector('.department-ring-label strong').textContent, '50%');
+  assert.equal(quality.querySelector('.department-ring-label span').textContent, '1 / 2');
+  assert.match(quality.querySelector('small').textContent, /3 points · 1 N\/A/);
+  const hr = cards.find(card => card.querySelector('h3').textContent === 'RH');
+  assert.equal(hr.querySelector('.department-ring-label strong').textContent, 'N/A');
+  const missing = cards.find(card => card.querySelector('h3').textContent === 'Non renseigné');
+  assert.equal(missing.querySelector('.department-ring-label strong').textContent, '0%');
+  await click(missing);
+  assert.equal(selected, '', 'Unassigned points remain selectable');
+  await view.unmount();
+});
+
 test('the interface creates an Excel project, opens it, and switches back to the original data', async () => {
   localStorage.clear();
   const view = await mount(React.createElement(ProjectsApp));
@@ -259,6 +366,22 @@ test('the interface creates an Excel project, opens it, and switches back to the
   assert.deepEqual([...metrics].slice(0, 3).map(e => e.textContent), ['15', '2', '13']);
   await click([...view.container.querySelectorAll('.nav-item')].find(b => b.textContent === 'GMP'));
   assert.equal(view.container.querySelectorAll('.points-table tbody tr').length, 8);
+  assert.deepEqual([...view.container.querySelectorAll('.points-table th')].map(e => e.textContent), ['N°', 'Point d’audit', 'Département', 'Statut', 'Deadline', '']);
+  assert.equal(view.container.querySelector('.points-table tbody tr').children[2].textContent, 'QHSE');
+  const productionCircle = () => view.container.querySelector('[aria-label="Afficher les points du département Production"]');
+  assert.ok(productionCircle());
+  assert.equal(view.container.querySelectorAll('.department-progress-card').length, 5, 'Only departments in the current audit appear');
+  await click(productionCircle());
+  assert.equal(productionCircle().getAttribute('aria-pressed'), 'true');
+  assert.equal(view.container.querySelectorAll('.points-table tbody tr').length, 1);
+  assert.equal(view.container.querySelector('[aria-label="Filtrer par département"]').value, 'Production');
+  assert.equal(view.container.querySelector('.donut-label strong').textContent, '0%', 'Audit overview remains independent of filters');
+  await click(productionCircle());
+  assert.equal(view.container.querySelectorAll('.points-table tbody tr').length, 8);
+  await input(view.container.querySelector('[aria-label="Filtrer par département"]'), 'Production');
+  assert.equal(view.container.querySelectorAll('.points-table tbody tr').length, 1);
+  assert.equal(view.container.querySelector('.points-table tbody tr').children[2].textContent, 'Production');
+  await input(view.container.querySelector('[aria-label="Filtrer par département"]'), 'Tous');
   assert.equal(view.container.querySelector('.donut-label strong').textContent, '0%');
   assert.equal(view.container.querySelector('.mini-metrics'), null, 'The removed metric tiles stay removed');
   await click(view.container.querySelector('.points-table tbody tr'));
@@ -266,6 +389,7 @@ test('the interface creates an Excel project, opens it, and switches back to the
   assert.match(view.container.querySelector('.nc-details').textContent, /Set up a GMP plan/);
   await click(view.container.querySelectorAll('.status-switch button')[1]);
   assert.equal(view.container.querySelector('.donut-label strong').textContent, '13%');
+  assert.equal(view.container.querySelector('[aria-label="Afficher les points du département QHSE"] .department-ring-label strong').textContent, '25%', 'Department percentage updates when a point is completed');
   await input(view.container.querySelector('.owner-edit input'), 'Pilote du nouveau projet');
   await click(view.container.querySelector('.owner-edit button'));
   assert.equal(view.container.querySelector('.detail-title small').textContent, 'Pilote du nouveau projet');
@@ -274,6 +398,56 @@ test('the interface creates an Excel project, opens it, and switches back to the
   await click([...view.container.querySelectorAll('button')].find(b => b.textContent === 'Mes projets'));
   assert.equal(view.container.querySelectorAll('.project-card').length, 3);
   await view.unmount();
+});
+
+test('language bar translates all five languages, persists selection and keeps audit filters and edits functional', async () => {
+  localStorage.clear();
+  let view = await mount(React.createElement(ProjectsApp));
+  for (const [label, code, expected] of [
+    ['English', 'en', 'My projects'], ['العربية', 'ar', 'مشاريعي'],
+    ['Italiano', 'it', 'I miei progetti'], ['中文', 'zh', '我的项目'], ['Français', 'fr', 'Mes projets'],
+  ]) {
+    await click(view.container.querySelector(`.language-options [aria-label="${label}"]`));
+    assert.match(view.container.querySelector('.projects-intro h1').textContent, new RegExp(expected));
+    assert.equal(document.documentElement.lang, code);
+    assert.equal(document.documentElement.dir, code === 'ar' ? 'rtl' : 'ltr');
+    assert.equal(localStorage.getItem(LANGUAGE_KEY), code);
+    assert.equal(view.container.querySelector('.language-options [aria-pressed="true"]').getAttribute('aria-label'), label);
+  }
+  await click(view.container.querySelector('.language-options [aria-label="English"]'));
+  const card = [...view.container.querySelectorAll('.project-card')].find(item => item.querySelector('h2').textContent.includes('Actions correctives'));
+  assert.ok(card, 'Imported project names are not translated');
+  await click(card.querySelector('.primary-action'));
+  await click([...view.container.querySelectorAll('.nav-item')].find(button => button.textContent === 'GMP'));
+  assert.equal(view.container.querySelector('.points-table th:nth-child(3)').textContent, 'Department');
+  const statusFilter = view.container.querySelectorAll('.filter-panel select')[1];
+  assert.equal(statusFilter.querySelector('option[value="In Progress"]').textContent, 'In progress');
+  await input(statusFilter, 'In Progress');
+  assert.equal(view.container.querySelectorAll('.points-table tbody tr').length, 8);
+  await click(view.container.querySelector('.points-table tbody tr'));
+  const originalTitle = view.container.querySelector('.detail-title h3').textContent;
+  await click(view.container.querySelectorAll('.status-switch button')[1]);
+  assert.equal(view.container.querySelector('.detail-title .status').textContent, 'Done');
+  assert.match(view.container.querySelector('.toast').textContent, /Item marked as completed/);
+  await click(view.container.querySelector('.language-options [aria-label="العربية"]'));
+  assert.equal(view.container.querySelector('.drawer h2').textContent, 'تفاصيل بند التدقيق');
+  assert.equal(view.container.querySelector('.detail-title h3').textContent, originalTitle);
+  assert.equal(view.container.querySelector('.detail-title .status').textContent, 'مكتمل');
+  assert.equal(view.container.querySelector('.project-toolbar select').value, CORRECTIVE_ID, 'Switching language keeps the active project');
+  await view.unmount();
+  view = await mount(React.createElement(ProjectsApp));
+  assert.match(view.container.querySelector('.projects-intro h1').textContent, /مشاريعي/);
+  assert.equal(document.documentElement.dir, 'rtl', 'Saved Arabic selection restores RTL');
+  await click(view.container.querySelector('.language-options [aria-label="Français"]'));
+  await view.unmount();
+  localStorage.setItem(LANGUAGE_KEY, 'invalid');
+  view = await mount(React.createElement(ProjectsApp));
+  assert.equal(document.documentElement.lang, 'fr');
+  assert.match(view.container.querySelector('.projects-intro h1').textContent, /Mes projets/);
+  await view.unmount();
+  assert.equal(translate('en', 'Ligne 8 : échéance invalide, date du projet utilisée.'), 'Row 8: invalid due date; project date used.');
+  const parameters = { title: 'NC <test> $& {name}' };
+  assert.equal(translate('en', 'Supprimer définitivement « {title} » ?', parameters), 'Permanently delete “NC <test> $& {name}”?');
 });
 
 test('SQL setup preserves old tables, creates projects atomically and isolates equal point IDs', async () => {

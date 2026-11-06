@@ -1,6 +1,10 @@
 # MYC Audit Readiness
 
-Interface Vite + React + TypeScript de suivi des audits GMP et SMETA. L’application est sans connexion. Les colonnes Documents et Département ne sont pas affichées dans les tableaux.
+Interface Vite + React + TypeScript de suivi des audits GMP et SMETA. L’application est sans connexion. Les tableaux affichent le département à la place du responsable. Les responsables restent accessibles dans le détail et la vue d’équipe. La colonne Documents n’est pas affichée.
+
+En haut des pages GMP et SMETA, le cercle global est accompagné de cercles par département de l’audit affiché. Chaque pourcentage correspond aux points terminés divisés par les points applicables ; un département sans point applicable affiche N/A. Cliquez sur un cercle pour filtrer ses actions, puis une seconde fois pour retirer ce filtre. Les cercles gardent la vue complète de l’audit pendant le filtrage du tableau.
+
+La barre **Traduction**, dans l’en-tête de l’accueil et des pages d’audit, propose le français, l’arabe, l’anglais, l’italien et le chinois simplifié. Le choix reste enregistré sur l’appareil, sans rechargement ni changement du projet actif. L’arabe active une mise en page de droite à gauche. Les libellés, formulaires, dates et messages de l’interface sont traduits localement, sans service externe ; les noms de projets, données Excel, responsables et commentaires gardent leur contenu d’origine.
 
 ## Projets et import Excel
 
@@ -22,6 +26,12 @@ Ce script ajoute `audit_projects`, `audit_project_points` et deux fonctions de s
 Si une ancienne installation ne possède pas `audit_settings`, l’application crée uniquement les métadonnées du projet initial dans `audit_projects`, en conservant ses dates enregistrées sur le navigateur. Ses points restent dans `audit_points`. Les dates utilisent ensuite les mêmes fonctions de partage que les nouveaux projets ; il n’est pas nécessaire de créer une seconde table de dates. Une métadonnée déjà partagée est prioritaire et n’est jamais remplacée par le cache d’un autre navigateur.
 
 Tant que ce partage n’est pas disponible, les nouveaux projets portent la mention **Sur cet appareil** et sont enregistrés dans le navigateur. Les projets partagés déjà chargés ne basculent pas silencieusement en mode local en cas d’échec de sauvegarde. Lors de l’activation du partage, un projet local absent en ligne est importé ; si le même identifiant existe déjà en ligne, sa version partagée fait autorité.
+
+### Départements des actions correctives
+
+Les deux rapports révisés du 6 novembre sont lus par `npm run import:departments` : le rapport GMP `19-10-2026.xlsx` et le rapport SMETA `08-09-10-2026 (1).xlsx`. Cette commande produit `src/corrective-departments.json` et vérifie les correspondances des 15 NC avec les rapports d’origine. Elle ne réimporte aucun statut, échéance, responsable ou commentaire. Les classeurs sources restent inchangés.
+
+Au chargement, les quatre départements corrigés sont appliqués uniquement au projet **Actions correctives — octobre 2026**, en vérifiant le numéro, l’audit et les faits de la NC. Les projets locaux sont conservés dans le navigateur ; les projets partagés reçoivent des mises à jour du seul champ `department`, conditionnées à l’ancienne valeur. Un département personnalisé différent est conservé. Un échec de synchronisation est affiché avec le bouton **Réessayer**. Les autres projets et les points supprimés restent inchangés.
 
 ### Vérifications
 

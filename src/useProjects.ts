@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import type { AuditKind, Point } from './data';
 import { supabase } from './supabase';
+import { correctedDepartment } from './corrective-departments';
 import { initialProjects, LEGACY_DATES_KEY, LEGACY_ID, LEGACY_POINTS_KEY, PROJECTS_KEY, fromLegacyRow, projectRow, toLegacyRow, type AuditProject } from './projects';
 
 type SharedProject = ReturnType<typeof projectRow> & { audit_project_points: (Point & { project_id?: string })[] };
@@ -84,6 +85,20 @@ export function useProjects(database = supabase) {
           setSharingAvailable(true);
           // The legacy header holds dates only; its points remain in audit_points.
           const remote = catalogRows.filter(row => row.id !== LEGACY_ID).map(fromShared);
+          // Apply the revised reports to the original corrective project only.
+          // Compare the old department so another browser's later edit is preserved.
+          for (const project of remote) {
+            for (const point of project.points) {
+              const department = correctedDepartment(project.id, point);
+              if (department === undefined) continue;
+              if (!active) return;
+              const { data, error } = await client.from('audit_project_points').update({ department })
+                .eq('project_id', project.id).eq('id', point.id).eq('department', point.department)
+                .select('*').abortSignal(controller.signal).maybeSingle();
+              if (error) errors.push('La mise à jour des départements des actions correctives a échoué. Réessayez la synchronisation.');
+              else if (data) point.department = data.department;
+            }
+          }
           const remoteIds = new Set(remote.map(p => p.id));
           // Atomic creation is idempotent. Existing remote projects are never overwritten by a seed or old cache.
           for (const project of projectsRef.current.filter(p => p.id !== LEGACY_ID && !remoteIds.has(p.id))) {

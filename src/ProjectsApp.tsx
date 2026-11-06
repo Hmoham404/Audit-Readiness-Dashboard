@@ -1,3 +1,4 @@
+import { useLanguage, LanguageProvider } from './i18n';
 import { useEffect, useRef, useState } from 'react';
 import { Check, FileSpreadsheet, Plus, X } from 'lucide-react';
 import AuditWorkspace from './App';
@@ -7,7 +8,7 @@ import { cloneChecklist, LEGACY_ID, type AuditProject } from './projects';
 import { useProjects, type ProjectStore } from './useProjects';
 import { ProjectsHome } from './ProjectsHome';
 
-function CreateProjectModal({ store, onClose, onCreated }: { store: ProjectStore; onClose: () => void; onCreated: (id: string) => void }) {
+function CreateProjectModal({ store, onClose, onCreated }: { store: ProjectStore; onClose: () => void; onCreated: (id: string) => void }) { const { t, locale } = useLanguage();
   const dialog = useRef<HTMLDialogElement>(null);
   const tokens = useRef({ GMP: 0, SMETA: 0 });
   const [name, setName] = useState('');
@@ -54,28 +55,28 @@ function CreateProjectModal({ store, onClose, onCreated }: { store: ProjectStore
     else setError('Le projet n’a pas pu être enregistré. Réessayez ; les fichiers sélectionnés sont conservés dans cette fenêtre.');
   };
   return <dialog className="project-dialog" ref={dialog} onCancel={event => { event.preventDefault(); if (!busy) onClose(); }} aria-labelledby="new-project-title">
-    <form onSubmit={submit}><div className="drawer-head"><div><span className="eyebrow">UN NOUVEL ESPACE DE SUIVI</span><h2 id="new-project-title">Créer un projet</h2></div><button type="button" className="icon-button" disabled={busy} onClick={onClose} aria-label="Fermer"><X size={19}/></button></div>
-      <div className="project-form-body"><label className="project-field">Nom du projet<input autoFocus required maxLength={120} value={name} onChange={e => setName(e.target.value)} placeholder="Ex. Préparation aux audits — 2027"/></label>
-        <label className="project-field">Description <span className="optional">(facultatif)</span><input maxLength={300} value={description} onChange={e => setDescription(e.target.value)} placeholder="Objectif ou périmètre du projet"/></label>
-        <fieldset className="project-modes"><legend>Comment souhaitez-vous commencer ?</legend>{([
+    <form onSubmit={submit}><div className="drawer-head"><div><span className="eyebrow">{t("UN NOUVEL ESPACE DE SUIVI")}</span><h2 id="new-project-title">{t("Créer un projet")}</h2></div><button type="button" className="icon-button" disabled={busy} onClick={onClose} aria-label={t("Fermer")}><X size={19}/></button></div>
+      <div className="project-form-body"><label className="project-field">{t("Nom du projet")}<input autoFocus required maxLength={120} value={name} onChange={e => setName(e.target.value)} placeholder={t("Ex. Préparation aux audits — 2027")}/></label>
+        <label className="project-field">{t("Description ")}<span className="optional">{t("(facultatif)")}</span><input maxLength={300} value={description} onChange={e => setDescription(e.target.value)} placeholder={t("Objectif ou périmètre du projet")}/></label>
+        <fieldset className="project-modes"><legend>{t("Comment souhaitez-vous commencer ?")}</legend>{([
           ['empty', 'Projet vide', 'Ajoutez vos propres points au fur et à mesure.'],
           ['copy', 'Copier une checklist', 'Reprenez les exigences, avec les statuts remis en cours.'],
           ['excel', 'Importer Excel', 'Un fichier GMP et un fichier SMETA, avec leurs statuts.'],
-        ] as const).map(([value, title, detail]) => <label className={`project-mode ${mode === value ? 'selected' : ''}`} key={value}><input type="radio" name="project-mode" value={value} checked={mode === value} disabled={busy} onChange={() => setMode(value)}/><span><b>{title}</b><small>{detail}</small></span></label>)}</fieldset>
-        {mode === 'copy' && <label className="project-field">Projet à copier<select value={sourceId} onChange={e => setSourceId(e.target.value)}>{store.projects.map(project => <option key={project.id} value={project.id}>{project.name}</option>)}</select></label>}
-        <div className="project-date-fields">{(['GMP', 'SMETA'] as const).map(audit => <label className="project-field" key={audit}>Date d’audit {audit}<input required type="date" value={deadlines[audit]} onChange={e => setDeadlines(previous => ({ ...previous, [audit]: e.target.value }))}/></label>)}</div>
-        {mode === 'excel' && <div className="project-imports">{(['GMP', 'SMETA'] as const).map(audit => <div className="project-import" key={audit}><label className="project-field"><span><FileSpreadsheet size={16}/> Fichier Excel {audit}</span><input type="file" accept=".xlsx" disabled={store.saving} onChange={e => { void read(audit, e.target.files?.[0]); }}/></label>
-          {reading[audit] && <p role="status">Lecture du fichier…</p>}{importErrors[audit] && <p className="import-error" role="alert">{importErrors[audit]}</p>}
-          {imports[audit] && <div className="import-preview"><p><Check size={14}/>{imports[audit]!.points.length} points reconnus · {imports[audit]!.points.filter(p => p.status === 1 && p.applicable).length} terminés</p><small>Feuille : {imports[audit]!.sheet}</small>{!!imports[audit]!.warnings.length && <details><summary>{imports[audit]!.warnings.length} remarque(s) à vérifier</summary>{imports[audit]!.warnings.map((warning, index) => <p key={index}>{warning}</p>)}</details>}</div>}
-        </div>)}<p className="project-form-note">Formats reconnus : registre de non-conformités et checklist de préparation. Les fichiers sources restent inchangés. Les statuts vides sont considérés en cours.</p></div>}
-        <p className="project-form-note">{store.sharingAvailable ? 'Ce projet sera partagé avec les autres utilisateurs.' : 'Ce projet sera enregistré sur cet appareil.'}</p>
-        {error && <p className="import-error" role="alert">{error}</p>}
-      </div><div className="project-form-footer"><button type="button" className="outline-btn" disabled={busy} onClick={onClose}>Annuler</button><button className="primary-action" disabled={busy || store.loading}><Plus size={16}/>{store.saving ? 'Création…' : 'Créer le projet'}</button></div>
+        ] as const).map(([value, title, detail]) => <label className={`project-mode ${mode === value ? 'selected' : ''}`} key={value}><input type="radio" name="project-mode" value={value} checked={mode === value} disabled={busy} onChange={() => setMode(value)}/><span><b>{t(title)}</b><small>{t(detail)}</small></span></label>)}</fieldset>
+        {mode === 'copy' && <label className="project-field">{t("Projet à copier")}<select value={sourceId} onChange={e => setSourceId(e.target.value)}>{store.projects.map(project => <option key={project.id} value={project.id}>{project.name}</option>)}</select></label>}
+        <div className="project-date-fields">{(['GMP', 'SMETA'] as const).map(audit => <label className="project-field" key={audit}>{t("Date d’audit ")}{audit}<input required type="date" value={deadlines[audit]} onChange={e => setDeadlines(previous => ({ ...previous, [audit]: e.target.value }))}/></label>)}</div>
+        {mode === 'excel' && <div className="project-imports">{(['GMP', 'SMETA'] as const).map(audit => <div className="project-import" key={audit}><label className="project-field"><span><FileSpreadsheet size={16}/>{t(" Fichier Excel ")}{audit}</span><input type="file" accept=".xlsx" disabled={store.saving} onChange={e => { void read(audit, e.target.files?.[0]); }}/></label>
+          {reading[audit] && <p role="status">{t("Lecture du fichier…")}</p>}{importErrors[audit] && <p className="import-error" role="alert">{t(importErrors[audit])}</p>}
+          {imports[audit] && <div className="import-preview"><p><Check size={14}/>{imports[audit]!.points.length}{t(" points reconnus · ")}{imports[audit]!.points.filter(p => p.status === 1 && p.applicable).length}{t(" terminés")}</p><small>{t("Feuille : ")}{imports[audit]!.sheet}</small>{!!imports[audit]!.warnings.length && <details><summary>{imports[audit]!.warnings.length}{t(" remarque(s) à vérifier")}</summary>{imports[audit]!.warnings.map((warning, index) => <p key={index}>{t(warning)}</p>)}</details>}</div>}
+        </div>)}<p className="project-form-note">{t("Formats reconnus : registre de non-conformités et checklist de préparation. Les fichiers sources restent inchangés. Les statuts vides sont considérés en cours.")}</p></div>}
+        <p className="project-form-note">{store.sharingAvailable ? t("Ce projet sera partagé avec les autres utilisateurs.") : t("Ce projet sera enregistré sur cet appareil.")}</p>
+        {error && <p className="import-error" role="alert">{t(error)}</p>}
+      </div><div className="project-form-footer"><button type="button" className="outline-btn" disabled={busy} onClick={onClose}>{t("Annuler")}</button><button className="primary-action" disabled={busy || store.loading}><Plus size={16}/>{store.saving ? t("Création…") : t("Créer le projet")}</button></div>
     </form>
   </dialog>;
 }
 
-export default function ProjectsApp() {
+function ProjectsWorkspace() { const { t, locale } = useLanguage();
   const store = useProjects();
   const [activeId, setActiveId] = useState<string | null>(null);
   const [creating, setCreating] = useState(false);
@@ -85,4 +86,8 @@ export default function ProjectsApp() {
       : <ProjectsHome store={store} onOpen={setActiveId} onCreate={() => setCreating(true)}/>}
     {creating && <CreateProjectModal store={store} onClose={() => setCreating(false)} onCreated={id => { setActiveId(id); setCreating(false); }}/ >}
   </>;
+}
+
+export default function ProjectsApp() {
+  return <LanguageProvider><ProjectsWorkspace/></LanguageProvider>;
 }

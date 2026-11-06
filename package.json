@@ -8,6 +8,7 @@
     "build": "tsc -b && vite build",
     "test": "node --test tests/projects.test.mjs",
     "import:corrective": "node scripts/import-corrective.mjs",
+    "import:departments": "node scripts/import-departments.mjs",
     "preview": "vite preview --host 0.0.0.0"
   },
   "dependencies": {

@@ -3,6 +3,42 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .language-switcher { @apply flex shrink-0 flex-col gap-1; }
+  .language-caption { @apply px-1 text-[8px] font-bold uppercase tracking-[.23em] text-slate-500; }
+  .language-options { @apply inline-flex items-center gap-0.5 rounded-full border border-slate-200 bg-white p-1; }
+  .language-options button { @apply flex min-h-8 items-center gap-1.5 rounded-full border-0 bg-transparent px-2 text-slate-600 transition-colors hover:bg-slate-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-500; }
+  .language-options button.selected { @apply bg-violet-600 text-white; background-image: linear-gradient(110deg, #6654e8, #ec3e83); }
+  .language-flag { @apply h-5 w-5 shrink-0 overflow-hidden rounded-full; }
+  .language-options button > span { @apply flex min-w-6 flex-col items-start gap-0.5; }
+  .language-options b { @apply text-[9px] font-bold leading-none; }
+  .language-options small { @apply text-[7px] leading-none; }
+}
+
+/* Keep the language choice visible on every screen, including narrow layouts. */
+header.topbar { height: auto; min-height: 76px; flex-wrap: wrap; gap: 12px; padding-top: 10px; padding-bottom: 10px; }
+header.topbar .top-actions { flex-wrap: wrap; gap: 16px; }
+html[dir="rtl"] .sidebar { left: auto; right: 0; }
+html[dir="rtl"] .main { margin-left: 0; margin-right: 15rem; }
+html[dir="rtl"] .drawer { left: 0; right: auto; }
+html[dir="rtl"] table, html[dir="rtl"] .nav-item { text-align: right; }
+html[dir="rtl"] .legend b { margin-left: 0; margin-right: auto; }
+html[dir="rtl"] .deadline-date { text-align: left; }
+@media (max-width: 1150px) {
+  html[dir="rtl"] .main { margin-right: 13rem; }
+  header.topbar .today { display: none; }
+}
+@media (max-width: 760px) {
+  html[dir="rtl"] .main { margin-right: 0; }
+  html[dir="rtl"] .sidebar { transform: translateX(100%); }
+  html[dir="rtl"] .sidebar.show { transform: translateX(0); }
+}
+@media (max-width: 600px) {
+  header.topbar > .crumb { flex-basis: calc(100% - 48px); }
+  header.topbar .top-actions { width: 100%; justify-content: flex-end; }
+  .language-options button { padding-left: 7px; padding-right: 7px; }
+}
+
 @layer base {
   :root { color-scheme: light; font-synthesis: none; }
   html { @apply min-h-full antialiased; }
@@ -121,7 +157,29 @@
   .due-pill > span { @apply flex flex-col gap-1; }
   .due-pill b { @apply text-xs; }
   .due-pill small { @apply text-[10px] text-rose-400; }
-  .audit-page-progress { @apply mx-auto mb-5 w-full max-w-[560px]; }
+  .audit-page-progress { @apply mb-5 grid w-full grid-cols-[minmax(300px,360px)_minmax(0,1fr)] items-start gap-4; }
+  .department-progress { @apply min-w-0; }
+  .department-progress-heading { @apply mb-3; }
+  .department-progress-heading h2 { @apply m-0 font-display text-sm font-bold text-ink; }
+  .department-progress-heading p { @apply m-0 mt-1 text-[10px] text-slate-500; }
+  .department-progress-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px; }
+  .department-progress-card { @apply flex min-w-0 cursor-pointer flex-col items-center px-3 py-3 text-center transition-colors hover:border-blue-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2; }
+  .department-progress-card.active { @apply border-blue-400 bg-blue-50/70; }
+  .department-progress-card h3 { @apply m-0 flex min-h-8 items-center justify-center whitespace-pre-line break-words font-display text-[11px] font-bold leading-4 text-slate-700; overflow-wrap: anywhere; }
+  .department-ring { @apply relative my-1 h-[104px] w-[104px] shrink-0; }
+  .department-ring svg { @apply block h-full w-full; }
+  .department-ring circle { fill: none; stroke-width: 8; }
+  .department-ring-track { stroke: #cbd5df; }
+  .department-ring-done { stroke: #36a678; }
+  .department-ring-pending { stroke: #f28a42; }
+  .department-ring-label { @apply absolute inset-0 flex flex-col items-center justify-center; }
+  .department-ring-label strong { @apply font-display text-xl font-extrabold leading-tight text-slate-700; }
+  .department-ring-label span { @apply mt-1 text-[10px] text-slate-500; }
+  .department-progress-legend { @apply flex flex-wrap justify-center gap-x-2 gap-y-1 text-[9px] text-slate-500; }
+  .department-progress-legend span { @apply inline-flex items-center gap-1; }
+  .department-progress-legend .dot { @apply h-1.5 w-1.5; }
+  .department-progress-card > small { @apply mt-2 text-[9px] text-slate-400; }
+  .department-progress-empty { @apply rounded-xl border border-dashed border-slate-200 p-5 text-xs text-slate-500; }
   .filter-panel { @apply mb-3 flex items-end gap-3 p-4; }
   .filter-panel > label:not(.searchbox) { @apply grid min-w-[115px] flex-1 gap-1.5 text-[10px] font-semibold text-slate-500; }
   .filter-panel select { @apply h-10 rounded-lg border border-slate-200 bg-white px-3 text-xs text-slate-700 outline-none transition focus:border-blue-400 focus:ring-2 focus:ring-blue-100; }
@@ -242,6 +300,8 @@
 }
 
 @media (max-width: 760px) {
+  .audit-page-progress { @apply grid-cols-1; }
+  .department-progress-grid { grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); }
   .sidebar { @apply -translate-x-full transition-transform duration-200; }
   .sidebar.show { @apply translate-x-0; }
   .scrim { @apply fixed inset-0 z-20 block border-0 bg-slate-950/40; }

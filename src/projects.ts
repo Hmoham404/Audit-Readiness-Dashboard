@@ -1,5 +1,6 @@
 import { initialPoints, type AuditKind, type Point } from './data';
 import correctiveSeed from './corrective-seed.json';
+import { migrateLocalDepartments } from './corrective-departments';
 
 export const LEGACY_ID = 'preparation-2026';
 export const LEGACY_POINTS_KEY = 'myc-audit-points-excel-v1';
@@ -36,7 +37,7 @@ export function initialProjects(storage: Pick<Storage, 'getItem'>, sharedLegacy:
     sources: Object.fromEntries(Object.entries(correctiveSeed).map(([audit, result]) => [audit, { file: result.file, sheet: result.sheet, count: result.points.length }])),
     storage: 'local',
   });
-  return [legacy, ...projects];
+  return [legacy, ...projects.map(migrateLocalDepartments)];
 }
 
 export function cloneChecklist(points: Point[]): Point[] {

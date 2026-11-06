@@ -7,7 +7,7 @@ import { parseAuditRows } from '../src/excel-parser.ts';
 const files = (await fs.readdir('.')).filter(name => name.startsWith('MYCTN') && name.endsWith('.xlsx'));
 const imports = {};
 for (const audit of ['GMP', 'SMETA']) {
-  const file = files.find(name => audit === 'GMP' ? name.includes('GMP') : !name.includes('GMP'));
+  const file = files.find(name => audit === 'GMP' ? name.endsWith('19-10-2026 GMP.xlsx') : name.endsWith('08-09-10-2026.xlsx'));
   if (!file) throw new Error(`Classeur ${audit} absent`);
   imports[audit] = parseAuditRows(await readSheet(path.resolve(file), { sheet: 'Registre NC' }), audit, file, 'Registre NC', '2026-11-30');
 }
